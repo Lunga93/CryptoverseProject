@@ -12,7 +12,7 @@ Step 1 : Install git on your system
 Step 2 : Create account on github - https://github.com
 
 
- 3 : Create a repository on github & copy url
+step 3 : Create a repository on github & copy url
 
 Step 4 : Goto VS Code and open project/folder
 
