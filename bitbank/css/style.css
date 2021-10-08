@@ -1783,7 +1783,7 @@ a:hover {
 ==================================================================*/
 .top-footer {
   background-color: #c1d6d9;
-  border-top: 1px solid #070707;
+  border-top: 1px solid #c1d6d9;
   padding: 100px 0 80px;
 }
 
@@ -1824,7 +1824,7 @@ a:hover {
 .footer-bottom {
   text-align: center;
   background-color: #c1d6d9;
-  border-top: 1px solid #070707;
+  border-top: 1px solid #2c6872;
   padding: 30px 0;
 }
 
