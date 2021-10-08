@@ -1783,7 +1783,7 @@ a:hover {
 ==================================================================*/
 .top-footer {
   background-color: #c1d6d9;
-  border-top: 1px solid #404040;
+  border-top: 1px solid #070707;
   padding: 100px 0 80px;
 }
 
@@ -1800,7 +1800,7 @@ a:hover {
 .top-footer p {
   font-size: 13px;
   line-height: 30px;
-  color: #bdbdbd;
+  color: #070707;
   font-weight: 300;
   padding-right: 20px;
 }
@@ -1808,7 +1808,7 @@ a:hover {
 .top-footer li a {
   font-size: 13px;
   line-height: 30px;
-  color: #bdbdbd;
+  color: #070707;
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -1824,14 +1824,14 @@ a:hover {
 .footer-bottom {
   text-align: center;
   background-color: #c1d6d9;
-  border-top: 1px solid #2c2c2c;
+  border-top: 1px solid #070707;
   padding: 30px 0;
 }
 
 .footer-bottom h5 {
   font-size: 12px;
   line-height: 1;
-  color: #888888;
+  color: #070707;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1842,7 +1842,7 @@ a:hover {
 .footer-bottom h6 {
   font-size: 11px;
   line-height: 15px;
-  color: #888888;
+  color: #070707;
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -1850,7 +1850,7 @@ a:hover {
 }
 
 .footer-bottom p {
-  color: #656565;
+  color: #070707;
 }
 
 .footer-bottom a {
