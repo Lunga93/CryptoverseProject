@@ -1748,7 +1748,7 @@ a:hover {
 
 .comment-wrap .media .comment-meta {
   font-size: 12px;
-  color: #888;
+  color: white;
 }
 
 .comment-wrap .media p {
@@ -1831,7 +1831,7 @@ a:hover {
 .footer-bottom h5 {
   font-size: 12px;
   line-height: 1;
-  color: #888888;
+  color: white;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1842,7 +1842,7 @@ a:hover {
 .footer-bottom h6 {
   font-size: 11px;
   line-height: 15px;
-  color: #888888;
+  color: white;
   font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 2px;
@@ -1850,7 +1850,7 @@ a:hover {
 }
 
 .footer-bottom p {
-  color: #656565;
+  color: white;
 }
 
 .footer-bottom a {
