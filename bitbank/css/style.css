@@ -111,12 +111,12 @@ a:hover {
 
 a:focus,
 a:hover {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .btn-main,
 .btn-main-sm {
-  background-color: #31bb9e;
+  background-color: #2c6872;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -200,7 +200,7 @@ a:hover {
 }
 
 #preloader {
-  background: #31bb9e;
+  background: #2c6872;
   height: 100%;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -419,8 +419,8 @@ a:hover {
   height: 6px;
   position: relative;
   width: 90px;
-  background: #31bb9e;
-  border-color: #31bb9e;
+  background: #2c6872;
+  border-color: #2c6872;
   margin-bottom: 10px;
 }
 
@@ -452,7 +452,7 @@ a:hover {
 }
 
 .header-bradcrumb a:hover {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .slick-slide {
@@ -476,15 +476,15 @@ a:hover {
 }
 
 .commonTab .nav-tabs .nav-item .nav-link.active {
-  border: 1px solid #31bb9e;
-  background: #31bb9e;
+  border: 1px solid #2c6872;
+  background: #2c6872;
   color: #fff;
 }
 
 .commonTab .nav-tabs .nav-item .nav-link:hover {
-  border: 1px solid #31bb9e;
+  border: 1px solid #2c6872;
   border-radius: 0;
-  background: #31bb9e;
+  background: #2c6872;
   color: #fff;
 }
 
@@ -493,7 +493,7 @@ a:hover {
 }
 
 .account {
-  background: #31bb9e;
+  background: #2c6872;
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -549,7 +549,7 @@ a:hover {
 }
 
 .single-page-header .breadcrumb li a {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 /*=================================================================
@@ -557,7 +557,7 @@ a:hover {
 ==================================================================*/
 .navigation {
   transition: 0.3s all;
-  background: #2c6872;
+  background: #8a7168;
 }
 
 .navigation .navbar-nav > li.active a {
@@ -565,7 +565,7 @@ a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: #707d8f;
+  color: #070707;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -588,7 +588,7 @@ a:hover {
 .navigation .navbar-nav > li > a:active,
 .navigation .navbar-nav > li > a:focus {
   background: none;
-  color: #31bb9e;
+  color: #8a7168;
 }
 
 .navigation .navbar-toggler {
@@ -621,7 +621,7 @@ a:hover {
 
 .navigation .dropdown .dropdown-item:hover {
   background: transparent;
-  color: #31bb9e;
+  color: #8a7168;
 }
 
 .navigation .dropdown .dropdown-menu {
@@ -665,7 +665,7 @@ a:hover {
 .navbar-brand {
   height: auto;
   padding: 8px 0;
-  color: #31bb9e;
+  color: #8a7168;
 }
 
 .navbar-brand img {
@@ -823,7 +823,7 @@ a:hover {
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
   background: #fff;
-  color: #31bb9e;
+  color: #2c6872;
   line-height: 80px;
   font-size: 30px;
   margin-left: 5px;
@@ -891,7 +891,7 @@ a:hover {
 
 .about h4 {
   font-size: 14px;
-  color: #31bb9e;
+  color: #2c6872;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -960,7 +960,7 @@ a:hover {
 ==================================================================*/
 .call-to-action {
   padding: 100px 0;
-  background-color: #31bb9e;
+  background-color: #2c6872;
   color: #fff;
 }
 
@@ -976,7 +976,7 @@ a:hover {
 .call-to-action .btn-main-sm {
   margin-top: 20px;
   background: #fff;
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 /*=================================================================
@@ -1068,7 +1068,7 @@ a:hover {
   height: 30px;
   width: 30px;
   text-align: center;
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .social-icon li a i {
@@ -1166,7 +1166,7 @@ a:hover {
 .counters-item i {
   font-size: 40px;
   display: inline-block;
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .counters-item h3 {
@@ -1181,7 +1181,7 @@ a:hover {
 .pricing-table .pricing-tab {
   text-align: center;
   margin-bottom: 25px;
-  border: 1px solid #31bb9e;
+  border: 1px solid #2c6872;
   display: inline-block;
   padding: 2px;
   margin-bottom: 50px;
@@ -1199,7 +1199,7 @@ a:hover {
 }
 
 .pricing-table .pricing-tab li .active {
-  background: #31bb9e;
+  background: #2c6872;
   border-radius: 0;
 }
 
@@ -1221,7 +1221,7 @@ a:hover {
   color: #fff;
   font-size: 16px;
   padding: 15px;
-  background: #31bb9e;
+  background: #2c6872;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
@@ -1250,7 +1250,7 @@ a:hover {
 }
 
 .pricing-table .pricing-item .progress .progress-bar {
-  background: #31bb9e;
+  background: #2c6872;
 }
 
 .pricing-table .pricing-item .btn-main,
@@ -1272,7 +1272,7 @@ a:hover {
 }
 
 .custom-pricing a {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .custom-pricing-form h3 {
@@ -1357,7 +1357,7 @@ a:hover {
 .service-2 .service-item i {
   font-size: 30px;
   display: inline-block;
-  color: #31bb9e;
+  color: #2c6872;
   border-radius: 30px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
   height: 55px;
@@ -1368,7 +1368,7 @@ a:hover {
 }
 
 .service-list .block {
-  background: #31bb9e;
+  background: #2c6872;
   color: #fff;
   padding: 30px;
 }
@@ -1407,7 +1407,7 @@ a:hover {
 }
 
 .team-skills .progress-block .progress .progress-bar {
-  background: #31bb9e;
+  background: #2c6872;
   box-shadow: none;
 }
 
@@ -1452,7 +1452,7 @@ a:hover {
 }
 
 .development-steps .step-2 {
-  background-color: #31bb9e;
+  background-color: #2c6872;
 }
 
 .development-steps .step-2 h4,
@@ -1522,7 +1522,7 @@ a:hover {
   Testimonial section
 ==================================================================*/
 .testimonial {
-  background: #31bb9e;
+  background: #2c6872;
   position: relative;
 }
 
@@ -1535,7 +1535,7 @@ a:hover {
 
 .testimonial .item i {
   font-size: 40px;
-  color: #31bb9e;
+  color: #2c6872;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -1671,7 +1671,7 @@ a:hover {
 }
 
 .next-prev a:hover {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .next-prev .prev-post i {
@@ -1694,7 +1694,7 @@ a:hover {
 }
 
 .social-profile ul li a i:hover {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .comments-section {
@@ -1769,7 +1769,7 @@ a:hover {
 .comment-reply-form input:focus,
 .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #31bb9e;
+  border: 1px solid #2c6872;
 }
 
 .comment-reply-form textarea,
@@ -1818,7 +1818,7 @@ a:hover {
 }
 
 .top-footer li a:hover {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .footer-bottom {
@@ -1854,7 +1854,7 @@ a:hover {
 }
 
 .footer-bottom a {
-  color: #31bb9e;
+  color: #2c6872;
 }
 
 .subscribe-form .form-control {
