@@ -557,7 +557,7 @@ a:hover {
 ==================================================================*/
 .navigation {
   transition: 0.3s all;
-  background: #8a7168;
+  background: #c1d6d9;
 }
 
 .navigation .navbar-nav > li.active a {
@@ -1305,7 +1305,7 @@ a:hover {
 .services .service-block i {
   font-size: 40px;
   color: #31bb9e;
-  background: linear-gradient(100deg, #f9643d, #fe2a77);
+  background: linear-gradient(100deg, #f9643d, #2c6872);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
