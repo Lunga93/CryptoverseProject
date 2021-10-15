@@ -7,7 +7,8 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Bingo One page parallax responsive HTML Template ">
-  
+  <link rel="stylesheet" href="sidebar/see.css">
+  <script src="https://kit.fontawesome.com/15f4b1a016.js" crossorigin="anonymous"></script>
   <meta name="author" content="Themefisher.com">
 
   <title>Bit-Bank</title>
@@ -30,10 +31,32 @@
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
-  
-
 </head>
+  <!--the side bar local navigation-->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+<a href="#home"><i class="fas fa-user"></i></i> User Profile</a>
+<a href="#services"><i class="fas fa-chart-line"></i></i> Trade</a>
+<a href="#clients"><i class="fas fa-chart-pie"></i></i> Portfolio</a>
+<a href="#contact"><i class="fas fa-cog"></i></i> Settings</a>
+</div>
+<div id="main">
+<h2>Sidenav Push Example</h2>
+<p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 
 <body id="body">
 
