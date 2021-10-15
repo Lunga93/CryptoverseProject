@@ -36,7 +36,7 @@
 
 </head>
 
-< id="body">
+
 
  <!--
   Start Preloader
@@ -180,13 +180,17 @@ Fixed Navigation
  <!--
 Welcome Slider
 ==================================== -->
+
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
-<a href="#home"><i class="fas fa-user"></i></i> User Profile</a>
-<a href="#services"><i class="fas fa-chart-line"></i></i> Trade</a>
-<a href="#clients"><i class="fas fa-chart-pie"></i></i> Portfolio</a>
-<a href="#contact"><i class="fas fa-cog"></i></i> Settings</a>
-</div>
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <span class="topleft" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <div id="main">
 <section class="hero-area">
 	<div class="container">
@@ -208,7 +212,7 @@ Welcome Slider
 							<a data-scroll href="#services" class="btn btn-main">Explore Us</a>		
 						</li>
 					</ul>
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                    
 				</div>
 			</div>
 		</div>
@@ -851,5 +855,14 @@ Start Call To Action
     <!-- Custom js -->
     <script src="js/script.js"></script>
 
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
   </body>
   </html>
