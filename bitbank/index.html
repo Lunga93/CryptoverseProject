@@ -10,7 +10,7 @@
   
   <meta name="author" content="Themefisher.com">
 
-  <title>Bit-Bank</title>
+  <title>Cryptoverse</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
@@ -36,7 +36,7 @@
 
 </head>
 
-<body id="body">
+
 
  <!--
   Start Preloader
@@ -143,13 +143,13 @@ Fixed Navigation
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Buy/Sell</a>
+                                <a class="nav-link" href="Wallet.html">Wallet </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="faq.html">F.A.Q</a>
+                                <a class="nav-link" href="orders.html">Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="notifications.html">Notifications</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login.html">Sign In</a>
@@ -180,13 +180,17 @@ Fixed Navigation
  <!--
 Welcome Slider
 ==================================== -->
+
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
-<a href="#home"><i class="fas fa-user"></i></i> User Profile</a>
-<a href="#services"><i class="fas fa-chart-line"></i></i> Trade</a>
-<a href="#clients"><i class="fas fa-chart-pie"></i></i> Portfolio</a>
-<a href="#contact"><i class="fas fa-cog"></i></i> Settings</a>
-</div>
+    
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <span class="topleft" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
 <div id="main">
 <section class="hero-area">
 	<div class="container">
@@ -208,7 +212,7 @@ Welcome Slider
 							<a data-scroll href="#services" class="btn btn-main">Explore Us</a>		
 						</li>
 					</ul>
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                    
 				</div>
 			</div>
 		</div>
@@ -787,60 +791,33 @@ Start Call To Action
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>INFORMATION</h3>
+          <h3> About</h3>
           <ul>
-            <li><a href="#">Payment Option</a></li>
-            <li><a href="#">Free Schedule</a></li>
-            <li><a href="#">Getting Started</a></li>
-            <li><a href="#">Bitcoin Calculator</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Our Services</h3>
+          <h3>Contact</h3>
           <ul>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
+             <li><a class="nav-link" href="contact.html">Contact</a></li> 
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Quick Links</h3>
+          <h3>Email</h3>
           <ul>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ’s</a></li>
-            <li><a href="#">Badges</a></li>
+              <li><a class="nav-link" href="email.html">Email</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Follow Us</h3>
+          <h3>FAQ</h3>
           <ul>
-              <li>
-                  <a href="">
-                      Facebook
-                  </a>
-              </li>
-              <li>
-                  <a href="">
-                      Twitter
-                  </a>
-              </li>
-              <li>
-                  <a href="">
-                      Linkedin
-                  </a>
-              </li>
-              <li>
-                  <a href="">
-                      Google PLus
-                  </a>
-              </li>
+        <li><a class="nav-link" href="faq.html">FAQ</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -878,5 +855,14 @@ Start Call To Action
     <!-- Custom js -->
     <script src="js/script.js"></script>
 
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
   </body>
   </html>

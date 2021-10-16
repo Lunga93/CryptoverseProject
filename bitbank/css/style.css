@@ -58,6 +58,57 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.topleft {
+  position: absolute;
+  top: 75px;
+  left: 16px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(36, 62, 67);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
 p {
   font-family: "Roboto", sans-serif;
   color: #9a9a9a;
@@ -557,7 +608,7 @@ a:hover {
 ==================================================================*/
 .navigation {
   transition: 0.3s all;
-  background: #c1d6d9;
+  background: rgb(36, 62, 67);
 }
 
 .navigation .navbar-nav > li.active a {
@@ -565,7 +616,7 @@ a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: #070707;
+  color: #fff;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -622,6 +673,7 @@ a:hover {
 .navigation .dropdown .dropdown-item:hover {
   background: transparent;
   color: #8a7168;
+  padding-top: 50px;
 }
 
 .navigation .dropdown .dropdown-menu {
