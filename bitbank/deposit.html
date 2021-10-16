@@ -128,36 +128,49 @@ Fixed Navigation
         </div>
     </div>
 </section>
-
- <!--
-Welcome Slider
-==================================== -->
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-<div id="main">
-
 <!--
-Wallet
+Add Card Details
 ==================================== -->
 <section class="call-to-action section-sm">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 text-center">
-				<h2><i class="fas fa-user"></i> My Wallet</h2>
-			</div>
-            <div class="col-md-12 amount-box text-center">
-                <i class="fas fa-wallet"></i>
-            </div>
-            <div class="col-md-12 text-center"><p>Total Balance</p>
-                <p class="amount">$ </p>
-            </div>
-            <div class="col-md-12 text-center">
-                <p><a href="deposit.html" class="btn btn-outline-light">Deposit</a>
-                <a href="" class="btn btn-outline-light">Withdraw</a></p>
-            </div> 
+			<div class="col-md-12 text-left">
+				<form action ="xxxxx.php" method= "POST">
+                    <fieldset>
+                        <h2> Add Your Card Details</h2>  
+                        <label for="lastName"> Last Name:</label><br> 
+                        <label for="firstName"> First Name:</label><br>
+                        <input type="text" name="firstName" id="firstName" size="35" required><br>
 
+                        <label for="lastName"> Last Name:</label><br>
+                        <input type="text" name="lastName" id="lastName" size="35" required><br>
+
+                        <label for="cardNumber"> Card Number:</label><br>
+                        <input type="number" name="cardNumber" id="cardNumber" size="25" maxlength="16" required><br><br>
+
+                    <label for="expiryDate"> Expiry Date:</label><br>
+                        <input type="number" name="expiryDate" id="expiryDate" size="25" maxlength="4" pattern="[0-12]/{31}" required><br>
+
+                        <label for="CVCNumber"> CVC Number:</label><br>
+                        <input type="number" name="CVCNumber" id="CVCNumber" size="25" maxlength="4" required><br>
+
+                        <label for="postCode"> Postal code:</label><br>
+                        <input type="text" name="postalCode" id="postalCode" size="25" maxlength="4" required><br>
+                        
+                        <label for="jobTitle"> Type of Bank:</label><br>
+                        <select id= "bank" name="bank">
+                        <option value= "ABSA"> ABSA</option>
+                        <option value= "FNB"> FNB</option>
+                        <option value= "Capitec"> Capitec</option>
+                        <option value= "Nedbank"> Nedbank</option>
+                        <option VALUE= "Standard Bank"> Standard Bank</option>
+                        </select><br><br>
+                        <input type="submit" name="submit" value="Add">   
+                    </fieldset>
+			</div>
 		</div> 		<!-- End row -->
 	</div>   	<!-- End container -->
-</section>   <!-- End section -->
+</section> 
 
 <footer id="footer" class="bg-one">
   <div class="top-footer">
