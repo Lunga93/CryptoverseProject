@@ -557,7 +557,7 @@ a:hover {
 ==================================================================*/
 .navigation {
   transition: 0.3s all;
-  background: #c1d6d9;
+  background: rgb(36, 62, 67);
 }
 
 .navigation .navbar-nav > li.active a {
@@ -565,7 +565,7 @@ a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: #070707;
+  color: #fff;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -622,6 +622,7 @@ a:hover {
 .navigation .dropdown .dropdown-item:hover {
   background: transparent;
   color: #8a7168;
+  padding-top: 50px;
 }
 
 .navigation .dropdown .dropdown-menu {
