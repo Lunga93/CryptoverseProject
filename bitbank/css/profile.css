@@ -32,10 +32,24 @@ body {
   text-decoration: none;
 }
 .card {
-  position: relative;
+  position: right;
   display: flex;
   flex-direction: column;
 }
 .content {
   background-color: whitesmoke;
 }
+.sidenav {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidemain {
+    margin-left: 600px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
