@@ -1,24 +1,31 @@
+<?php
+  session_start();
+    $_SESSION;
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-<html lang="zxx"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="zxx">
+<!--<![endif]-->
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Bingo One page parallax responsive HTML Template ">
-  
+
   <meta name="author" content="Themefisher.com">
 
   <title>Cryptoverse</title>
 
-<!-- Mobile Specific Meta
+  <!-- Mobile Specific Meta
   ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-  
+
   <!-- CSS
   ================================================== -->
   <!-- Themefisher Icon font -->
@@ -31,13 +38,13 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  
+
 
 </head>
 
 <body id="body">
 
- <!--
+  <!--
   Start Preloader
   ==================================== -->
   <div id="preloader">
@@ -55,223 +62,226 @@
       <div class="sk-circle11 sk-child"></div>
       <div class="sk-circle12 sk-child"></div>
     </div>
-  </div> 
+  </div>
   <!--
   End Preloader
   ==================================== -->
 
 
-  
-<!--
+
+  <!--
 Fixed Navigation
 ==================================== -->
-<section class="top-header">
+  <section class="top-header">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="currency-status">
-                    <li>
-                        <a href="#">
-                            <i class="tf-ion-arrow-down-b down-status"></i>
-                            <span>BTC/USD</span>
-                            <span>15046.07</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ETH/USD</span>
-                            <span >843.0005</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BCH/USD</span>
-                            <span>2648.1377</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BTG/USD</span>
-                            <span>278.0000</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>DASH/USD</span>
-                            <span>1131.8100</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>XRP/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ZEC/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="header  navigation">
-  <div class="container">
       <div class="row">
-          <div class="col-md-12">
-              <nav class="navbar navbar-expand-lg">
-                  <a class="navbar-brand" href="index.html">
-                      <img src="images/logo.png" alt="logo">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="tf-ion-android-menu"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav ml-auto">
-                          <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="Wallet.html">Wallet </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="orders.html">Orders</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="notifications.html">Notifications</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="login.html">Sign In</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="signup.html">Sign Up</a>
-                          </li>
-
-                          <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Pages
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="team.html">Team Page</a>
-                                  <a class="dropdown-item" href="404.html">404 Page</a>
-                                  <a class="dropdown-item" href="blog.html">Blog Page</a>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-              </nav>
-              
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="signin-page account">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <div class="block text-center">
-          <h2 class="text-center">Create Your Account</h2>
-          <form class="text-left clearfix mt-30" action="index.html">
-            <div class="form-group">
-              <input type="text" class="form-control"  placeholder="First Name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Last Name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Username">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control"  placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control"  placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-main text-center">Sign In</button>
-          </form>
-          <p class="mt-20">Already have an account ?<a href="login.html"> Login</a></p>
-          
+        <div class="col-md-12">
+          <ul class="currency-status">
+            <li>
+              <a href="#">
+                <i class="tf-ion-arrow-down-b down-status"></i>
+                <span>BTC/USD</span>
+                <span>15046.07</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="tf-arrow-dropup up-status"></i>
+                <span>ETH/USD</span>
+                <span>843.0005</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="tf-arrow-dropup up-status"></i>
+                <span>BCH/USD</span>
+                <span>2648.1377</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="tf-arrow-dropup up-status"></i>
+                <span>BTG/USD</span>
+                <span>278.0000</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="tf-arrow-dropup down-status"></i>
+                <span>DASH/USD</span>
+                <span>1131.8100</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="tf-arrow-dropup down-status"></i>
+                <span>XRP/USD</span>
+                <span>2.1956</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="tf-arrow-dropup up-status"></i>
+                <span>ZEC/USD</span>
+                <span>2.1956</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<footer id="footer" class="bg-one">
-  <div class="top-footer">
+  </section>
+  <section class="header  navigation">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3> About</h3>
-          <ul>
-            <li><a class="nav-link" href="about.html">About</a></li>
-          </ul>
-        </div>
-        <!-- End of .col-sm-3 -->
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="tf-ion-android-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Wallet.html">Wallet </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="orders.html">Orders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="notifications.html">Notifications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
 
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Contact</h3>
-          <ul>
-             <li><a class="nav-link" href="contact.html">Contact</a></li> 
-          </ul>
-        </div>
-        <!-- End of .col-sm-3 -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Pages
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="team.html">Team Page</a>
+                    <a class="dropdown-item" href="404.html">404 Page</a>
+                    <a class="dropdown-item" href="blog.html">Blog Page</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Email</h3>
-          <ul>
-              <li><a class="nav-link" href="email.html">Email</a></li>
-          </ul>
         </div>
-        <!-- End of .col-sm-3 -->
-
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>FAQ</h3>
-          <ul>
-              <li><a class="nav-link" href="faq.html">FAQ</a></li>
-          </ul>
-        </div>
-        <!-- End of .col-sm-3 -->
-
       </div>
-    </div> <!-- end container -->
-  </div>
-  <div class="footer-bottom">
-    <h5>Copyright 2021. CryptoVerse.</h5>
-    <h6>Design and Developed by Devworks</h6>
-  </div>
-</footer> <!-- end footer -->
+    </div>
+  </section>
 
-    <!-- end Footer Area
+  <section class="signin-page account">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="block text-center">
+            <h2 class="text-center">Create Your Account</h2>
+            <form class="text-left clearfix mt-30" method="POST" action="addUser.php">
+              <div class="form-group">
+                <input type="text" name="fName" class="form-control" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input type="text" name="lName" class="form-control" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                <input type="text" name="uName" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password">
+              </div>
+              <button type="submit" name="submit" class="btn btn-main text-center">Sign In</button>
+            </form>
+            <p class="mt-20">Already have an account ?<a href="login.html"> Login</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="bg-one">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3> About</h3>
+            <ul>
+              <li><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Contact</h3>
+            <ul>
+              <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Email</h3>
+            <ul>
+              <li><a class="nav-link" href="email.html">Email</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>FAQ</h3>
+            <ul>
+              <li><a class="nav-link" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+
+        </div>
+      </div> <!-- end container -->
+    </div>
+    <div class="footer-bottom">
+      <h5>Copyright 2021. CryptoVerse.</h5>
+      <h6>Design and Developed by Devworks</h6>
+    </div>
+  </footer> <!-- end footer -->
+
+  <!-- end Footer Area
     ========================================== -->
 
-    
-    <!-- 
+
+  <!-- 
     Essential Scripts
     =====================================-->
-    
-    <!-- Main jQuery -->
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
-    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Owl Carousel -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Smooth Scroll js -->
-    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    
-    <!-- Custom js -->
-    <script src="js/script.js"></script>
 
-  </body>
-  </html>
+  <!-- Main jQuery -->
+  <script src="plugins/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+  <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Smooth Scroll js -->
+  <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+
+  <!-- Custom js -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
