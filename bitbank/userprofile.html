@@ -10,82 +10,144 @@
 </head>
 <body>
     <div class="container">
-        <div class="main">
-            <div class="topbar">
-                <a href="">Logout</a>
-                <a href="">Support</a>
-                <a href="">Work</a>
-                <a href="">Home</a>
-            </div>
-            <div class="sidenav">
-                <div class="col-md-4 mt 1">
-                    <div class="Card text-center sidebar">
-                            <i class="fas fa-user"></i>
-                            
-                                
-                              </div>
-                            </class>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidemain">
-                        <table>
-                            <tr>
-                                <td colspan="2">
-                                <h1>About</h1>
-                            </td>
-                            </tr>
-                            <td>Name</td>
-                            <td><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;David</em></td>
-                        </table>
-                        
-                    </div>
-                    
-                    <table>
-                        <tr>
-                            
-
-                        </tr>
-                    
-                            <hr>
-                            <div class="sidemain">
-                                <div class="col-md-3">
-                                   <td><h5>Email</h5></td>
-                                </div>
-                                <div class="col-md-9 text-secondary"><td><em>abc@gmail.com</em></td>
-                                </div>
-                        </div>
-                        <hr>
-                        <div class="sidemain">
-                            <div class="col-md-3">
-                                <h5>Phone</h5>
-                            </div>
-                            <div class="col-md-9 text-secondary">
-                                00923469874656
-                            </div>
-                            </div>
-                            <div class="sidemain">
-                                <div class="col-md-3">
-                                    <h5>Address</h5>
-                                    </div>
-                                    <div class="col-md-9 text-secondary">
-                                        street no. 4, xyz
-                            </div>
-                            
-                            </div>
-                            
-                                </div>
-                            </div>
-                        
-                
-                        </div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)"
+                class="tab active">
+                <i class="fas fa-user"></i>
+            </a>
+                <a onclick="tabs(0)"
+                class="tab active">
+                <i class="fas fa-wallet"></i>
+            </a>
+            <a onclick="tabs(0)"
+                class="tab active">
+                <i class="fas fa-question-circle"></i>
+            </a>
+            <a onclick="tabs(0)"
+                class="tab active">
+                <i class="fas fa-cog"></i>
+            </a>
+            <a onclick="tabs(0)"
+                class="tab active">
+                <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </nav>
         </div>
-    </table>
+        <div class="rightbox">
+            <div class="profile tabshow">
+                <h1>Personal Information</h1>
+                <h2>Full Name</h2>
+                <input type="text"
+                class="input" value="Jessica Nel">
+                <h2>User Name</h2>
+                <input type="text"
+                class="input" value="Jessica">
+                <h2>Email Address</h2>
+                <input type="email"
+                class="input" value="Jessicanel@gmail.com">
+                <h2>Password</h2>
+                <input type="password"
+                class="input" value="*******">
+                <p></p>
+                <button class="btn">Update</button>
+            </div>
+            <div class="payment tabshow">
+                <h1>Credit Information</h1>
+                <h2>Payment Method</h2>
+                <input type="text"
+                class="input" value="MasterCard - - 0234 **** 45654 ***">
+                <h2>Billing Address</h2>
+                <input type="text"
+                class="input" value="7 avenue place">
+                <h2>Zip Code</h2>
+                <input type="text"
+                class="input" value="4178">
+                <h2>Billing Date </h2>
+                <input type="text"
+                class="input" value="Jan 20, 2017">
+                <h2>Redeem Card </h2>
+                <input type="text"
+                class="input" value="Enter Gift Code">
+                <p></p>
+                <button class="btn">Update</button>
+        </div>
+        <div class="Subscription tabshow">
+            <h1>Subcription Information</h1>
+            <h2>Payment Dates</h2>
+            <p>May 12, 2019</p>
+            <h2>Next Charges</h2>
+            <p>$80.56 <span>includes tax</span></p>
+            <h2>Plan</h2>
+            <p>limited Plan</p>
+            <h2>Monthly </h2>
+            <p>$107.99/month</p>
+            <button class="btn">Update</button>
+    </div>
+    <div class="Privacy tabshow">
+        <h1>Privacy settings</h1>
+        <h2>Manage Email Notifications</h2>
+        <p></p>
+        <h2>Manage Privacy Settings</h2>
+        <p></p>
+        <h2>Plan</h2>
+        <h2>View Terms of Use </h2>
+        <p>Personalized Ad Experience</p>
+        <P></P>
+        <H2>Protect Account</H2>
+        <p></p>
+        <button class="btn">Update</button>
+</div>
+<div class="Privacy tabshow">
+    <h1>Privacy settings</h1>
+    <h2>Manage Email Notifications</h2>
+    <p></p>
+    <h2>Manage Privacy Settings</h2>
+    <p></p>
+    <h2>Plan</h2>
+    <h2>View Terms of Use </h2>
+    <p>Personalized Ad Experience</p>
+    <P></P>
+    <H2>Protect Account</H2>
+    <p></p>
+    <button class="btn">Update</button>
+    </div>
+    <div class="Setting tabshow">
+        <h1>Account settings</h1>
+        <h2>Sync Watchlist</h2>
+        <p></p>
+        <h2>hold subscription</h2>
+        <p></p>
+        <h2>Cancel Subscription</h2>
+        <p></p>
+        <h2>Your devices </h2>
+        <p></p>
+        <P></P>
+        <H2>Referrals</H2>
+        <p></p>
+        <button class="btn">Update</button>
+    </div>
+        </div>
+        </div>
+    <script src="bitbank/jquery.js"></script>
+     <script>
+         const tabBtn = document.querySelectorAll(".tab");
+         const tab = document.querySelectorAll(".tabShow");
+         function tabs(panelIndex) {
+             tab.forEach(function(node){
+                 node.style.display ="none";
+             });
+             tab[panelIndex].style.display="block";
+             
+         }
+         tabs(0);
+     </script> 
+     <script>
+         $(".tab").click(function() {
+             $(this).addClass("active").siblings().removeClass("active");
+         })
+     </script> 
 </body>
-</html>
+</html>                     
+                                
+                              

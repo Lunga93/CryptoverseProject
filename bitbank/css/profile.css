@@ -1,56 +1,98 @@
+@import url("https://kit.fontawesome.com/15f4b1a016.js");
 body {
-  margin-top: 20px;
-  background-color: lightgrey;
-}
-.main {
-  padding: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.topbar {
-  background-color: teal;
-  overflow: hidden;
-}
-.topbar a {
-  float: right;
-  color: whitesmoke;
-  text-align: center;
-  padding: 20px 26px;
-  text-decoration: none;
-  font-size: 26;
-}
-.sidebar {
-  background-color: #333;
-  color: white;
-  height: 100%;
-}
-.sidebar a {
-  margin-left: 10px;
-  display: block;
-  color: white;
-  padding-bottom: 10px;
-  font-size: 30px;
-  text-decoration: none;
-}
-.card {
-  position: right;
-  display: flex;
-  flex-direction: column;
-}
-.content {
-  background-color: whitesmoke;
-}
-.sidenav {
-  height: 100%;
-  width: 400px;
-  position: fixed;
-  z-index: 1;
-  top: 50;
-  background-color: #111;
+  background: linear-gradient(to right, #2c6872, #fff);
   overflow-x: hidden;
-  padding-top: 20px;
 }
-.sidemain {
-  margin-left: 600px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+.container {
+  background: #fff;
+  width: 540px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+.leftbox {
+  float: left;
+  top: -5%;
+  left: 5%;
+  position: absolute;
+  width: 15%;
+  height: 110%;
+  background: #2c6872;
+  box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
+  border: lem solid #fff;
+}
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: #fff;
+  font-size: 1lem;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+  color: #8a7168;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+nav a:first-child {
+  margin-top: 7px;
+}
+nav a.active {
+  color: #8a7168;
+}
+.rightbox {
+  width: 60%;
+  margin-left: 27%;
+  padding-top: 5px;
+}
+.tabShow {
+  transition: all 0.5s ease-in;
+  width: 80%;
+  position: absolute;
+}
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #8a7168;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+h2 {
+  color: #777;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+.input,
+p {
+  border: 0;
+  border-bottom: 1px solid #3fb6a8;
+  width: 80;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  padding: 7px 0;
+  color: #070707;
+  outline: none;
+}
+span {
+  font-size: 0.7em;
+  color: #777;
+}
+.btr {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 0;
+  color: #fff;
+  background: #7ed386;
+  padding: 7px 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-top: 15px;
 }
