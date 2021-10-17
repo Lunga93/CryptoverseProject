@@ -1,10 +1,4 @@
-<?php
-  session_start();
-    include("connection.php");
-    include("functions.php");
 
-    $user_data = check_login($con);
-?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -193,7 +187,7 @@ Fixed Navigation
         <div class="col-md-6 mx-auto">
           <div class="block text-center">
             <h2 class="text-center">Create Your Account</h2>
-            <form class="text-left clearfix mt-30" method="POST" action="addUser.php">
+            <form class="text-left clearfix mt-30" action="addUser.php" method="POST">
               <div class="form-group">
                 <input type="text" name="fName" class="form-control" placeholder="First Name">
               </div>
@@ -209,9 +203,9 @@ Fixed Navigation
               <div class="form-group">
                 <input type="password" name="password" class="form-control" placeholder="Password">
               </div>
-              <button type="submit" name="submit" class="btn btn-main text-center">Sign In</button>
+              <input id="button" type="submit" value="Sign Up" class="btn btn-main text-center">
             </form>
-            <p class="mt-20">Already have an account ?<a href="login.html"> Login</a></p>
+            <p class="mt-20">Already have an account ?<a href="login.php"> Login</a></p>
 
           </div>
         </div>
