@@ -50,6 +50,7 @@ body {
   padding-top: 20px;
 }
 .sidemain {
-    margin-left: 600px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
+  margin-left: 600px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
