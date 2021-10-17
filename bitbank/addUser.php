@@ -1,25 +1,33 @@
-<?php
-//get values
-$lName = $_REQUEST['L_Name'];
-$fName = $_REQUEST['F_Name'];
-$uName = $_REQUEST['User_ID'];
-$email = $_REQUEST['Email'];
-$password = $_REQUEST['Password'];
+<?php 
+session_start();
 
+	include("connection.php");
+	include("functions.php");
 
-require_once("config.php");
+  //check if the user clicked on the signup
+	if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		//something was posted
+		$lName = $_REQUEST['L_Name'];
+        $fName = $_REQUEST['F_Name'];
+        $uName = $_REQUEST['User_ID'];
+        $email = $_REQUEST['Email'];
+        $password = $_REQUEST['Password'];
 
-$conn = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DATABASE)
-            or die("ERROR, unable to connect to database");
+		if(!empty($uName) && !empty($password) && !is_numeric($Uname))
+		{
 
-$query = "INSERT INTO EMPLOYEE(lName, fName, uName, email, password)
-            value ('$lName', '$fName', '$uName', '$email', '$password', '$job')";
+			//save to database
+			$query = "INSERT INTO devworks.user(lName, fName, uName, email, password)
+            value ('$lName', '$fName', '$uName', '$email', '$password')";
 
-$result = msqli_query($conn, $query)
-            or die("Unable to add employee");
+			mysqli_query($con, $query);
 
-$msqli_close($conn);
-
-echo "<h3>Complete</h3>";
-
+			header("Location: login.php");
+			die;
+		}else
+		{
+			echo "Please enter valid information!";
+		}
+	}
 ?>
