@@ -83,6 +83,7 @@ Fixed Navigation
             <div class="col-md-12">
                 <script src="https://www.cryptohopper.com/widgets/js/script"></script>
                 <div class="cryptohopper-web-widget" data-id="2" data-text_color="#ffffff" data-background_color="#000000" data-numcoins="10" data-realtime="on" data-ticker_position="header" data-ticker_speed="90" data-round="0" data-logos="0"></div>
+                <script src="https://kit.fontawesome.com/15f4b1a016.js" crossorigin="anonymous"></script>
             </div>
         </div>
     </div>
@@ -101,7 +102,7 @@ Fixed Navigation
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Wallet.html">Wallet </a>
@@ -122,10 +123,8 @@ Fixed Navigation
                                 <a class="nav-link" href="signup.php">Sign Up</a>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    User Profile
-                                </a>
+                            <li class="nav-item">
+                              <a class="far fa-user" href="userprofile.html"></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="team.html">User Details</a>
                                     <a class="dropdown-item" href="404.html">404 Page</a>
@@ -280,7 +279,7 @@ Start About Section
         <div class="col-sm-3 col-md-3 col-lg-3">
           <h3> About</h3>
           <ul>
-            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="team.html">About</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
@@ -346,3 +345,4 @@ Start About Section
     <script src="https://www.cryptohopper.com/widgets/js/script"></script>
   </body>
   </html>
+
