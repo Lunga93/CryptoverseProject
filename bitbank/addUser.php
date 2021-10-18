@@ -8,20 +8,21 @@ session_start();
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
-		$lName = $_REQUEST['L_Name'];
-        $fName = $_REQUEST['F_Name'];
-        $uName = $_REQUEST['User_ID'];
-        $email = $_REQUEST['Email'];
-        $password = $_REQUEST['Password'];
+		$lName = $_REQUEST['lName'];
+        $fName = $_REQUEST['fName'];
+        $uName = $_REQUEST['uName'];
+        $email = $_REQUEST['email'];
+        $password = $_REQUEST['password'];
 
-		if(!empty($uName) && !empty($password) && !is_numeric($Uname))
+		if(!empty($uName) && !empty($password))
 		{
 
 			//save to database
-			$query = "INSERT INTO devworks.user(lName, fName, uName, email, password)
+			$query = "INSERT INTO devworks.user(L_Name, F_Name, User_ID, Email, Password)
             value ('$lName', '$fName', '$uName', '$email', '$password')";
 
-			mysqli_query($con, $query);
+            mysqli_query($con, $query)
+            or die("Unable to add employee");
 
 			header("Location: login.php");
 			die;

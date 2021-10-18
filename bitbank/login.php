@@ -9,14 +9,14 @@ session_start();
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
-		$user_name = $_POST['Uname'];
+		$user_name = $_POST['email'];
 		$password = $_POST['password'];
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		if(!empty($user_name) && !empty($password))
 		{
 
 			//read from database
-			$query = "select * from devworks.user where User_ID = '$user_name' limit 1";
+			$query = "select * from devworks.user where email = '$user_name' limit 1";
 			$result = mysqli_query($con, $query);
 
 			if($result)
@@ -172,56 +172,7 @@ Fixed Navigation
         </div>
     </div>
 </section>
-<section class="header  navigation">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="tf-ion-android-menu"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Wallet.html">Wallet </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="orders.html">Orders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="notifications.html">Notifications</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.php">Sign In</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="signup.php">Sign Up</a>
-                            </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="team.html">Team Page</a>
-                                    <a class="dropdown-item" href="404.html">404 Page</a>
-                                    <a class="dropdown-item" href="blog.html">Blog Page</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                
-            </div>
-        </div>
-    </div>
-</section>
 <section class="signin-page account">
     <div class="container">
         <div class="row">
@@ -231,10 +182,10 @@ Fixed Navigation
                     
                     <form class="text-left clearfix mt-50">
                         <div class="form-group">
-                            <input type="email" class="form-control"  placeholder="Email">
+                            <input type="email" name="email" class="form-control"  placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" name="password" class="form-control" placeholder="Password">
                         </div>
                         <input id="button" type="submit" value="Sign Up" class="btn btn-main">
                         
