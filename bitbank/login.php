@@ -5,7 +5,7 @@ session_start();
 	include("connection.php");
 	include("functions.php");
 
-
+  //check if the user clicked on the signin
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
@@ -16,30 +16,30 @@ session_start();
 		{
 
 			//read from database
-			$query = "select * from devworks.user where email = '$user_name' limit 1";
-			$result = mysqli_query($con, $query);
+			$query = "select * from devworks.user where Email = '$user_name' limit 1";
+			$result = mysqli_query($con, $query)
+      or die("can't find user");
 
-			if($result)
-			{
-				if($result && mysqli_num_rows($result) > 0)
-				{
+      //$row = mysqli_fetch_array($result);
+			
 
 					$user_data = mysqli_fetch_assoc($result);
-					
-					if($user_data['password'] === $password)
+          
+				  echo 'shitty code around the world';
+					if($user_data['Password'] == $password)
 					{
-
-						$_SESSION['user_id'] = $user_data['user_id'];
+            echo '<script language="javascript">alert("my code no worky!")</script>';
+						$_SESSION['email'] = $user_data['Email'];
 						header("Location: index.php");
 						die;
 					}
-				}
-			}
-			
-			echo "wrong username or password!";
+          else {
+            echo 'please enter correct password';
+          }
+
 		}else
 		{
-			echo "wrong username or password!";
+			echo '<script language="javascript">alert("please make sure you fill in the boxes!")</script>';
 		}
 	}
 
@@ -180,34 +180,17 @@ Fixed Navigation
                 <div class="block">
                     <h2 class="text-center">Sign In to Cryptoverse</h2>
                     
-                    <form class="text-left clearfix mt-50">
+                    <form class="text-left clearfix mt-50" method="POST">
                         <div class="form-group">
                             <input type="email" name="email" class="form-control"  placeholder="Email">
                         </div>
                         <div class="form-group">
                             <input type="password" name="password" class="form-control" placeholder="Password">
                         </div>
-                        <input id="button" type="submit" value="Sign Up" class="btn btn-main">
+                        <input id="button" type="submit" value="Sign In" class="btn btn-main">
                         
                     </form>
-                    <script>
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
-
-loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
-
-    if (username === "user" && password === "web_dev") {
-        alert("You have successfully logged in.");
-        location.reload();
-    } else {
-        loginErrorMsg.style.opacity = 1;
-    }
-})
-                        </script>
+                    
                     <p class="mt-20">New in this site ?<a href="signup.php"> Create New Account</a></p>
                     <p><a href="forget-password.html"> Forgot your password?</a></p>
                 </div>

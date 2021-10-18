@@ -28,7 +28,7 @@ session_start();
 			die;
 		}else
 		{
-			echo "Please enter valid information!";
+			echo '<script language="javascript">alert("wrong username or password!")</script>';
 		}
 	}
 ?>
