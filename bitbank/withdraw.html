@@ -129,3 +129,118 @@ Fixed Navigation
         </div>
     </div>
 </section>
+
+
+<!--
+Withdraw
+==================================== -->
+<section class="call-to-action section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-left">
+				<form action ="xxxxx.php" method= "POST">
+          <fieldset>
+                        <h2> Withdrawal</h2> 
+                        
+                        <label for="amount">Amount:</label><br>
+                        <input type="number" name="amount" id="amount" size="25" required><br>
+
+                        <label for="cardNumber"> Card Number:</label><br>
+                        <input type="number" name="cardNumber" id="cardNumber" size="25" maxlength="16" required><br><br>
+
+                    <label for="expiryDate"> Expiry Date:</label><br>
+                        <input type="number" name="expiryDate" id="expiryDate" size="25" maxlength="4" pattern="[0-12]/{31}" required><br>
+
+                        <label for="CVCNumber"> CVC Number:</label><br>
+                        <input type="number" name="CVCNumber" id="CVCNumber" size="25" maxlength="4" required><br>
+
+
+                        <label for="bank"> Type of Bank:</label><br>
+                        <select id= "bank" name="bank">
+                        <option value= "ABSA"> ABSA</option>
+                        <option value= "FNB"> FNB</option>
+                        <option value= "Capitec"> Capitec</option>
+                        <option value= "Nedbank"> Nedbank</option>
+                        <option VALUE= "Standard Bank"> Standard Bank</option>
+                        </select><br><br>
+                        <input type="submit" name="submit" value="Withdraw">
+                    </fieldset> 
+                    </div>
+		</div> 		<!-- End row -->
+	</div>   	<!-- End container -->
+</section> 
+
+
+<footer id="footer" class="bg-one">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3> About</h3>
+            <ul>
+              <li><a class="nav-link" href="team.html">About</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Contact</h3>
+            <ul>
+               <li><a class="nav-link" href="contact.html">Contact</a></li> 
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Email</h3>
+            <ul>
+                <li><a class="nav-link" href="email.html">Email</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>FAQ</h3>
+            <ul>
+          <li><a class="nav-link" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+        </div>
+      </div> <!-- end container -->
+    </div>
+    <div class="footer-bottom">
+      <h5>Copyright 2021. CryptoVerse.</h5>
+      <h6>Design and Developed by Devworks</h6>
+    </div>
+  </footer> <!-- end footer -->
+  
+  
+      <!-- end Footer Area
+      ========================================== -->
+  
+  
+      
+      <!-- 
+      Essential Scripts
+      =====================================-->
+      
+      <!-- Main jQuery -->
+      <script src="plugins/jquery/dist/jquery.min.js"></script>
+      <!-- Bootstrap -->
+      <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+      <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- Owl Carousel -->
+      <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <!-- Smooth Scroll js -->
+      <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+      
+      <!-- Custom js -->
+      <script src="js/script.js"></script>
+  
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+    </body>
+    </html>
