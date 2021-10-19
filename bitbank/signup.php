@@ -1,4 +1,37 @@
+<?php 
+session_start();
 
+	include("connection.php");
+	include("functions.php");
+
+  //check if the user clicked on the signup
+	if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		//something was posted
+		$lName = $_REQUEST['lName'];
+        $fName = $_REQUEST['fName'];
+        $uName = $_REQUEST['uName'];
+        $email = $_REQUEST['email'];
+        $password = $_REQUEST['password'];
+
+		if(!empty($uName) && !empty($password))
+		{
+
+			//save to database
+			$query = "INSERT INTO devworks.user(L_Name, F_Name, User_ID, Email, Password)
+            value ('$lName', '$fName', '$uName', '$email', '$password')";
+
+            mysqli_query($con, $query)
+            or die("Unable to add employee");
+
+			header("Location: login.php");
+			die;
+		}else
+		{
+			echo '<script language="javascript">alert("Please provide the correct information!")</script>';
+		}
+	}
+?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -136,7 +169,7 @@ Fixed Navigation
         <div class="col-md-6 mx-auto">
           <div class="block text-center">
             <h2 class="text-center">Create Your Account</h2>
-            <form class="text-left clearfix mt-30" action="addUser.php" method="POST">
+            <form class="text-left clearfix mt-30" method="POST">
               <div class="form-group">
                 <input type="text" name="fName" class="form-control" placeholder="First Name">
               </div>
