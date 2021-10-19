@@ -6,6 +6,10 @@ session_start();
 	include("functions.php");
 
 	$user_data = check_login($con);
+  if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+}
+  
 
 ?>
 
@@ -125,7 +129,13 @@ Fixed Navigation
                             </li>
 
                             <li class="nav-item">
-                              <a class="far fa-user" href="userprofile.html"></a>
+                              <a class="far fa-user" href="userprofile.html"><?php if (isset($_SESSION['username'])) {
+                                                                              echo "   " . $username;
+
+                                                                              }
+                                                                              else {
+                                                                                echo 'guest';
+                                                                              } ?></a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="team.html">User Details</a>
                                     <a class="dropdown-item" href="404.html">404 Page</a>
