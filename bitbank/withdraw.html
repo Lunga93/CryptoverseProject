@@ -30,12 +30,13 @@
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
+  
+  <script src="https://kit.fontawesome.com/15f4b1a016.js" crossorigin="anonymous"></script>
   
 
 </head>
 
-<body id="body">
+
 
  <!--
   Start Preloader
@@ -70,62 +71,14 @@ Fixed Navigation
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <ul class="currency-status">
-                    <li>
-                        <a href="#">
-                            <i class="tf-ion-arrow-down-b down-status"></i>
-                            <span>BTC/USD</span>
-                            <span>15046.07</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ETH/USD</span>
-                            <span >843.0005</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BCH/USD</span>
-                            <span>2648.1377</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>BTG/USD</span>
-                            <span>278.0000</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>DASH/USD</span>
-                            <span>1131.8100</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup down-status"></i>
-                            <span>XRP/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="tf-arrow-dropup up-status"></i>
-                            <span>ZEC/USD</span>
-                            <span>2.1956</span>
-                        </a>
-                    </li>
-                </ul>
+                <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+                <div class="cryptohopper-web-widget" data-id="2" data-text_color="#ffffff" data-background_color="#000000" data-numcoins="10" data-realtime="on" data-ticker_position="header" data-ticker_speed="90" data-round="0" data-logos="0"></div>
+                <script src="https://kit.fontawesome.com/15f4b1a016.js" crossorigin="anonymous"></script>
             </div>
         </div>
     </div>
 </section>
-<section class="header  navigation">
+<section class="header navigation">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -142,13 +95,16 @@ Fixed Navigation
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Buy/Sell</a>
+                                <a class="nav-link" href="Wallet.html">Wallet </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="faq.html">F.A.Q</a>
+                                <a class="nav-link" href="orders.html">Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="notifications.html">Watchlist</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login.html">Sign In</a>
@@ -158,8 +114,12 @@ Fixed Navigation
                             </li>
 
                             <li class="nav-item">
-                                <a class="far fa-user" href="userprofile.html"></a>
-                                
+                              <a class="far fa-user" href="userprofile.html"></a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="team.html">User Details</a>
+                                    <a class="dropdown-item" href="404.html">404 Page</a>
+                                    <a class="dropdown-item" href="blog.html">Blog Page</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -170,29 +130,45 @@ Fixed Navigation
     </div>
 </section>
 
-<section class="page-wrapper section">
+
+<!--
+Withdraw
+==================================== -->
+<section class="call-to-action section-sm">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<h2>Frequently Asked Questions</h2>
-			
-			</div>
-			<div class="col-md-8">
-				<h4>What is a crypto wallet ?</h4>
-				<p>Crypto wallets are placed to store digital assets more securely than just on an exchange.One may hold their wallet through an exchange account, custody wallet.One may establish an online wallet that is internet connected—to your desktop, table or mobile phone.Cryptoverse also gives an option to store on a device that is not connected to the internet which are called "cold wallets". Cold wallets are recommened as they are the secure way to store cryptocurrency. </p>
-				<h4>Can I be trading 24/7 ?</h4>
-				<p>Yes, using CryptoVerse one is able to trade 24/7 as the cryptocurrencies available are tradable 24 hours a day</p>
-				<h4>How do i transfer Bitcoins to my bank account ?</h4>
-				<p>Bitcoins may not be transferred to your bank account, they may only be held inside a bitcoin wallet.However for a bitcoin cash out,one would have to exchange them back into dollars and the withdraw that currency back into the account</p>
-				<h4>Do I have a limit of trades done within a day?</h4>
-				<p>No you may make as many trades as possible under the condition that your funds are sufficient</p>
-				<h4>Is there a maximum amount i may have in my wallet ?</h4>
-				<p>The value required in the wallet is a minimum of 50 dollars and above.</p>
-			</div>
-		</div>
-	</div>
-</section>
+			<div class="col-md-12 text-left">
+				<form action ="xxxxx.php" method= "POST">
+          <fieldset>
+                        <h2> Withdrawal</h2> 
+                        
+                        <label for="amount">Amount:</label><br>
+                        <input type="number" name="amount" id="amount" size="25" required><br>
 
+                        <label for="cardNumber"> Card Number:</label><br>
+                        <input type="number" name="cardNumber" id="cardNumber" size="25" maxlength="16" required><br><br>
+
+                    <label for="expiryDate"> Expiry Date:</label><br>
+                        <input type="number" name="expiryDate" id="expiryDate" size="25" maxlength="4" pattern="[0-12]/{31}" required><br>
+
+                        <label for="CVCNumber"> CVC Number:</label><br>
+                        <input type="number" name="CVCNumber" id="CVCNumber" size="25" maxlength="4" required><br>
+
+
+                        <label for="bank"> Type of Bank:</label><br>
+                        <select id= "bank" name="bank">
+                        <option value= "ABSA"> ABSA</option>
+                        <option value= "FNB"> FNB</option>
+                        <option value= "Capitec"> Capitec</option>
+                        <option value= "Nedbank"> Nedbank</option>
+                        <option VALUE= "Standard Bank"> Standard Bank</option>
+                        </select><br><br>
+                        <input type="submit" name="submit" value="Withdraw">
+                    </fieldset> 
+                    </div>
+		</div> 		<!-- End row -->
+	</div>   	<!-- End container -->
+</section> 
 
 
 <footer id="footer" class="bg-one">
@@ -226,7 +202,7 @@ Fixed Navigation
           <div class="col-sm-3 col-md-3 col-lg-3">
             <h3>FAQ</h3>
             <ul>
-                <li><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li><a class="nav-link" href="faq.html">FAQ</a></li>
             </ul>
           </div>
           <!-- End of .col-sm-3 -->
@@ -240,30 +216,31 @@ Fixed Navigation
     </div>
   </footer> <!-- end footer -->
   
-
-
-    <!-- end Footer Area
-    ========================================== -->
-
-
-    
-    <!-- 
-    Essential Scripts
-    =====================================-->
-    
-    <!-- Main jQuery -->
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
-    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Owl Carousel -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Smooth Scroll js -->
-    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    
-    <!-- Custom js -->
-    <script src="js/script.js"></script>
-
-  </body>
-  </html>
+  
+      <!-- end Footer Area
+      ========================================== -->
+  
+  
+      
+      <!-- 
+      Essential Scripts
+      =====================================-->
+      
+      <!-- Main jQuery -->
+      <script src="plugins/jquery/dist/jquery.min.js"></script>
+      <!-- Bootstrap -->
+      <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+      <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- Owl Carousel -->
+      <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <!-- Smooth Scroll js -->
+      <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+      
+      <!-- Custom js -->
+      <script src="js/script.js"></script>
+  
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+    </body>
+    </html>

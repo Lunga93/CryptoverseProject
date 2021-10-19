@@ -3,11 +3,11 @@
 function check_login($con)
 {
 
-	if(isset($_SESSION['User_ID']))
+	if(isset($_SESSION['email']))
 	{
 
-		$id = $_SESSION['User_ID'];
-		$query = "select * from user where User_ID = '$id'";
+		$id = $_SESSION['email'];
+		$query = "select * from devworks.user where User_ID = '$id'";
 
 		$result = mysqli_query($con,$query);
 		if($result && mysqli_num_rows($result) > 0)
@@ -19,7 +19,9 @@ function check_login($con)
 	}
 
 	//redirect to login
-	header("Location: login.php");
+	else {
+		header("Location: login.php");
 	die;
+	}
 
 }
