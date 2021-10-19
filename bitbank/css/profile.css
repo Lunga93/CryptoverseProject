@@ -19,7 +19,7 @@ body {
   position: absolute;
   width: 15%;
   height: 110%;
-  background: #c1d6d9;
+  background: rgb(36, 62, 67);
   box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
   border: lem solid #fff;
 }

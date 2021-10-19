@@ -107,22 +107,14 @@ Fixed Navigation
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="Wallet.html">Wallet </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="orders.html">Orders</a>
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="notifications.html">Watchlist</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.php">Sign In</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="signup.php">Sign Up</a>
-                            </li>
+                            
 
                             <li class="nav-item">
                               <a class="far fa-user" href="userprofile.html"></a>
