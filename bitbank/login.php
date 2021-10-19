@@ -22,21 +22,26 @@ session_start();
 
       //$row = mysqli_fetch_array($result);
 			
-
+        
 					$user_data = mysqli_fetch_assoc($result);
+          if($user_data > 0) {
           
-				  echo 'shitty code around the world';
+				  //echo 'shitty code around the world';
 					if($user_data['Password'] == $password)
 					{
             echo '<script language="javascript">alert("my code no worky!")</script>';
 						$_SESSION['email'] = $user_data['Email'];
+            $_SESSION['username'] = $user_data['User_ID'];
 						header("Location: index.php");
 						die;
 					}
           else {
             echo 'please enter correct password';
           }
-
+        }
+        else {
+          echo '<script language="javascript">alert("Please enter correct information!")</script>';
+        }
 		}else
 		{
 			echo '<script language="javascript">alert("please make sure you fill in the boxes!")</script>';
