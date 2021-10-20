@@ -1,16 +1,8 @@
-import styles from './Coins.module.css';
-import Link from 'next/link';
+import styles from 'cryptoverse/css/api.css';
 
-const Coins = ({
-  name,
-  price,
-  symbol,
-  marketcap,
-  volume,
-  image,
-  priceChange,
-  id
-}) => {
+function Coins({
+  name, price, symbol, marketcap, volume, image, priceChange, id
+}) {
   return (
     <Link href='/coin/[id]' as={`/coin/${id}`}>
       <a>
@@ -44,6 +36,6 @@ const Coins = ({
       </a>
     </Link>
   );
-};
+}
 
 export default Coins;
