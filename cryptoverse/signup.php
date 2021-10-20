@@ -108,65 +108,18 @@ session_start();
   <!--
 Fixed Navigation
 ==================================== -->
-  <section class="top-header">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="currency-status">
-            <li>
-              <a href="#">
-                <i class="tf-ion-arrow-down-b down-status"></i>
-                <span>BTC/USD</span>
-                <span>15046.07</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="tf-arrow-dropup up-status"></i>
-                <span>ETH/USD</span>
-                <span>843.0005</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="tf-arrow-dropup up-status"></i>
-                <span>BCH/USD</span>
-                <span>2648.1377</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="tf-arrow-dropup up-status"></i>
-                <span>BTG/USD</span>
-                <span>278.0000</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="tf-arrow-dropup down-status"></i>
-                <span>DASH/USD</span>
-                <span>1131.8100</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="tf-arrow-dropup down-status"></i>
-                <span>XRP/USD</span>
-                <span>2.1956</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="tf-arrow-dropup up-status"></i>
-                <span>ZEC/USD</span>
-                <span>2.1956</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+<section class="top-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+        <div class="cryptohopper-web-widget" data-id="2" data-text_color="#ffffff" data-background_color="#000000" data-numcoins="10" data-realtime="on" data-ticker_position="header" data-ticker_speed="90" data-round="0" data-logos="0"></div>
+        <script src="https://kit.fontawesome.com/15f4b1a016.js" crossorigin="anonymous"></script>
       </div>
     </div>
-  </section>
+  </div>
+  </div>
+</section>
   
 
   <section class="signin-page account">

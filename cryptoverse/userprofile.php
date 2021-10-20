@@ -31,8 +31,8 @@ if (isset($_SESSION['username'])) {
     <div class="container">
         <div class="leftbox">
             <nav>
-                <a onclick="tabs(0)" class="tab active">
-                    <i class="fas fa-user" href="part1" id="profile"></i>
+                <a onclick="tabs(0)" class="tab active" href="userprofile.php">
+                    <i class="fas fa-user" ></i>
                 </a>
                 <a onclick="tabs(0)" class="tab active" href="payment.html">
                     <i class="fas fa-wallet"  id="payment"></i>

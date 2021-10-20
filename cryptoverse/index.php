@@ -82,7 +82,7 @@ if (isset($_SESSION['username'])) {
 
 
 <!--
-Fixed Navigation
+ Navigation
 ==================================== -->
 <section class="top-header">
   <div class="container-fluid">
