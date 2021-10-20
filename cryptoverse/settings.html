@@ -33,7 +33,7 @@
             </nav>
         </div>
         <div class="rightbox">
-            <div class="profile tabshow ">
+            <div class="profile tabshow profile--hidden ">
                 <h1>Personal Information</h1>
                 <h2>Full Name</h2>
                 <input type="text" class="input" value="<?php echo $firstname . " " . $lastname; ?>">
@@ -74,7 +74,7 @@
                 <p>$107.99/month</p>
                 <button class="btn">Update</button>
             </div>
-            <div class="Privacy tabshow subscription--hidden">
+            <div class="Privacy tabshow ">
                 <h1>Privacy settings</h1>
                 <h2>Manage Email Notifications</h2>
                 <p></p>
@@ -92,24 +92,7 @@
 
         </div>
     </div>
-    <script src="bitbank/jquery.js"></script>
-    <script>
-        const tabBtn = document.querySelectorAll(".tab");
-        const tab = document.querySelectorAll(".tabShow");
-        function tabs(panelIndex) {
-            tab.forEach(function (node) {
-                node.style.display = "none";
-            });
-            tab[panelIndex].style.display = "block";
-
-        }
-        tabs(0);
-    </script>
-    <script>
-        $(".tab").click(function () {
-            $(this).addClass("active").siblings().removeClass("active");
-        })
-    </script>
+   
 </body>
 
 </html>

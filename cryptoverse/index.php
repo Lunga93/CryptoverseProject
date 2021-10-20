@@ -129,11 +129,7 @@ Fixed Navigation
                                                                 } else {
                                                                   echo 'guest';
                                                                 } ?></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="team.html">User Details</a>
-                  <a class="dropdown-item" href="404.html">404 Page</a>
-                  <a class="dropdown-item" href="blog.html">Blog Page</a>
-                </div>
+                
               </li>
             </ul>
           </div>

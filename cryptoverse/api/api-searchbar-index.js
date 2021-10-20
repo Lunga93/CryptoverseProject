@@ -1,4 +1,4 @@
-import styles from 'cryptoverse/css/api.css';
+import styles from '../css/api.css';
 
 const SearchBar = ({ ...rest }) => {
   return (
