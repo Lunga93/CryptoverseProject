@@ -20,10 +20,17 @@ session_start();
 			$result = mysqli_query($con, $query)
       or die("can't find user");
 
+
       //$row = mysqli_fetch_array($result);
 			
         
 					$user_data = mysqli_fetch_assoc($result);
+          $id = $user_data['User_ID'];
+          $query2 = "SELECT * FROM devworks.wallet where User_ID = '$id'";
+          $result2 = mysqli_query($con, $query2)
+          or die("can't find wallet");
+          $user_data2 = mysqli_fetch_assoc($result2);
+          $_SESSION['balance'] = $user_data2['Balance'];
           if($user_data > 0) {
           
 				  //echo 'shitty code around the world';
