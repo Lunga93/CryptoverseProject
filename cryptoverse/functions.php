@@ -7,7 +7,7 @@ function check_login($con)
 	{
 
 		$id = $_SESSION['email'];
-		$query = "select * from devworks.user where User_ID = '$id'";
+		$query = "select * from devworks.user where Email = '$id'";
 
 		$result = mysqli_query($con,$query);
 		if($result && mysqli_num_rows($result) > 0)
