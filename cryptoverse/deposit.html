@@ -1,3 +1,17 @@
+<?php
+
+session_start();
+
+include("connection.php");
+include("functions.php");
+
+$user_data = check_login($con);
+if (isset($_SESSION['username'])) {
+  $username = $_SESSION['username'];
+}
+
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -110,14 +124,9 @@ Fixed Navigation
                                 <a class="nav-link" href="signup.html">Sign Up</a>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    User Profile
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="team.html">User Details</a>
-                                    <a class="dropdown-item" href="404.html">404 Page</a>
-                                    <a class="dropdown-item" href="blog.html">Blog Page</a>
+                            <li class="nav-item">
+                              <a class="far fa-user" href="userprofile.html"></a>
+                                
                                 </div>
                             </li>
                         </ul>
@@ -155,6 +164,8 @@ Add Card Details
 
                         <label for="postCode"> Postal code:</label><br>
                         <input type="text" name="postalCode" id="postalCode" size="25" maxlength="4" required><br>
+
+                        
                         
                         <label for="jobTitle"> Type of Bank:</label><br>
                         <select id= "bank" name="bank">
@@ -165,6 +176,9 @@ Add Card Details
                         <option VALUE= "Standard Bank"> Standard Bank</option>
                         </select><br><br>
                         <input type="submit" name="submit" value="Add">
+
+                        <label for="postCode"> Enter amount:</label><br>
+                        <input type="text" name="postalCode" id="postalCode" size="25" maxlength="4" required><br>
                     </fieldset> 
                     </div>
 		</div> 		<!-- End row -->
