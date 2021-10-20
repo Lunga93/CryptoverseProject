@@ -129,11 +129,7 @@ Fixed Navigation
                                                                 } else {
                                                                   echo 'guest';
                                                                 } ?></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="team.html">User Details</a>
-                  <a class="dropdown-item" href="404.html">404 Page</a>
-                  <a class="dropdown-item" href="blog.html">Blog Page</a>
-                </div>
+                
               </li>
             </ul>
           </div>
@@ -174,17 +170,49 @@ Welcome Slider
 <!--
 Start About Section
 ==================================== -->
-<section class="service-2 section bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="title text-center">
-          <div class="cryptohopper-web-widget" data-id="4" data-coins="bitcoin,ethereum,litecoin"></div>
+ <!-- Tables Starts -->
+
+ <section>
+ <div class="col-md-5">
+    <form class="d-flex">
+      <input class="form-control me-2" type="text" id="filter" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+    <div class="container-fluid mt-5">
+      <div class="row mb-5">
+        <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+          <div class="row align-items-center">
+            <div class="col-12 mb-4">
+              <h3 class="text-muted text-center mb-3">All CryptoCurrency Data</h3>
+              <table class="table table-striped bg-light text-center">
+                <thead>
+                  <tr class="text-muted">
+                    <th></th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Price</th>
+                    <th>Market Cap</th>
+
+                  </tr>
+                </thead>
+                <tbody id="data">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+  <script src="app.js"></script>
 
     <!-- Start Testimonial
 =========================================== -->

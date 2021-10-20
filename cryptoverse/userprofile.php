@@ -38,10 +38,10 @@ if (isset($_SESSION['username'])) {
                     <i class="fas fa-wallet"  id="payment"></i>
                 </a>
                 <a onclick="tabs(0)" class="tab active" href="subscription.html">
-                    <i class="fas fa-question-circle" href="part3" id="subscription"></i>
+                    <i class="fas fa-question-circle" ></i>
                 </a>
                 <a onclick="tabs(0)" class="tab active" href="settings.html">
-                    <i class="fas fa-cog" href="part4" id="privacy"></i>
+                    <i class="fas fa-cog"  ></i>
                 </a>
                 <a onclick="tabs(0)" class="tab active" href="logout.php">
                     <i class="fas fa-sign-out-alt" href="logout.php"></i>
