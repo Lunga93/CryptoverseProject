@@ -23,7 +23,7 @@
 
         while($array = next($coins_USD)){
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-CoinAPI-Key: 71E2C732-2B51-47BA-87EC-4FE08B2A4796'));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-CoinAPI-Key: C938843F-78B2-4848-973A-77385C2A2E99'));
             curl_setopt_array($ch, array(
                 CURLOPT_RETURNTRANSFER => 1,
                 CURLOPT_URL => $array
