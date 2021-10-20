@@ -1,4 +1,4 @@
-import styles from 'cryptoverse/css/api.css';
+import styles from '../css/api.css';
 
 function Coins({
   name, price, symbol, marketcap, volume, image, priceChange, id

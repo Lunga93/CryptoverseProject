@@ -1,4 +1,4 @@
-import styles from './Coins.module.css';
+import styles from '..css/api.css';
 import Link from 'next/link';
 
 const Coins = ({
