@@ -32,6 +32,8 @@ session_start();
             echo '<script language="javascript">alert("my code no worky!")</script>';
 						$_SESSION['email'] = $user_data['Email'];
             $_SESSION['username'] = $user_data['User_ID'];
+            $_SESSION['firstname'] = $user_data['F_Name'];
+            $_SESSION['lastname'] = $user_data['L_Name'];
 						header("Location: index.php");
 						die;
 					}

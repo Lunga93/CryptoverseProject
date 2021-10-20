@@ -8,6 +8,9 @@ include("functions.php");
 $user_data = check_login($con);
 if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
+  $firstname = $_SESSION['firstname'];
+  $lastname = $_SESSION['lastname'];
+  $email = $_SESSION['email'];
 }
 
 
@@ -40,7 +43,7 @@ if (isset($_SESSION['username'])) {
                 <a onclick="tabs(0)" class="tab active">
                     <i class="fas fa-cog" href="part4" id="privacy"></i>
                 </a>
-                <a onclick="tabs(0)" class="tab active">
+                <a onclick="tabs(0)" class="tab active" href="logout.php">
                     <i class="fas fa-sign-out-alt" href="logout.php"></i>
 
                 </a>
@@ -50,11 +53,11 @@ if (isset($_SESSION['username'])) {
             <div class="profile tabshow ">
                 <h1>Personal Information</h1>
                 <h2>Full Name</h2>
-                <input type="text" class="input" value="Jessica Nel">
+                <input type="text" class="input" value="<?php echo $firstname . " " . $lastname; ?>">
                 <h2>User Name</h2>
-                <input type="text" class="input" value="Jessica">
+                <input type="text" class="input" value="<?php echo $username; ?>">
                 <h2>Email Address</h2>
-                <input type="email" class="input" value="Jessicanel@gmail.com">
+                <input type="email" class="input" value="<?php echo $email; ?>">
                 <h2>Password</h2>
                 <input type="password" class="input" value="*******">
                 <p></p>
