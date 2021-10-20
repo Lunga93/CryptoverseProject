@@ -19,10 +19,16 @@ session_start();
 
 			//save to database
 			$query = "INSERT INTO devworks.user(L_Name, F_Name, User_ID, Email, Password)
-            value ('$lName', '$fName', '$uName', '$email', '$password')";
+            value ('$lName', '$fName', '$uName', '$email', '$password');";
 
             mysqli_query($con, $query)
             or die("Unable to add employee");
+
+            $query2 = "INSERT INTO devworks.wallet(User_ID, Balance)
+              value ('$uName', 1000)";
+
+              mysqli_query($con, $query2)
+              or die("Unable to add details in wallet");
 
 			header("Location: login.php");
 			die;
