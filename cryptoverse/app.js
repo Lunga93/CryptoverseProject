@@ -1,4 +1,4 @@
-const COIN_RANKING_API_URL = "https://pure-woodland-29790.herokuapp.com/coins"
+const COIN_RANKING_API_URL = "https://pure-woodland-29790.herokuapp.com/coins?limit=10'"
 const coinList = document.getElementById("data")
 const filterInput = document.getElementById("filter")
 
@@ -31,24 +31,25 @@ const loadCoins = async () => {
     console.log(error)
   }
 }
-
+var counter = 0;
 const displayCoins = (coins) => {
   const htmlString = coins.map((coin) => {
     return `
     <tr>
-      <td>${coin.name}</td>
       <td>${coin.rank}</td>
+      <td><img src="${coin.iconUrl}" height="25" width="25" /></td>
+      <td>${coin.name}</td>
+      <td>${coin.change}</td>
       <td>${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(coin.price)}</td>
       <td>${formatCash(coin.marketCap)}</td>
-      <td>${coin.symbol}</td>
-      <td><img src="${coin.iconUrl}" height="25" width="25" /></td>
-      <td>
-      <a href="${coin.coinrankingUrl}" target="_blank">
-      <i class="fas fa-chart-line"></i>
-      </a>
-      </td>
+      
     </tr>
-    `
+   `
+
+    /* counter += 1;
+     if (counter == 10) {
+       break;
+     }*/
   })
     .join('');
   coinList.innerHTML = htmlString
