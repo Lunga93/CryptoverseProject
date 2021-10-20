@@ -33,13 +33,12 @@
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  
-  <script src="https://kit.fontawesome.com/15f4b1a016.js" crossorigin="anonymous"></script>
+
   
 
 </head>
 
-
+<body id="body">
 
  <!--
   Start Preloader
@@ -66,7 +65,6 @@
 
 
   
-
 <!--
 Fixed Navigation
 ==================================== -->
@@ -74,14 +72,62 @@ Fixed Navigation
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <script src="https://www.cryptohopper.com/widgets/js/script"></script>
-                <div class="cryptohopper-web-widget" data-id="2" data-text_color="#ffffff" data-background_color="#000000" data-numcoins="10" data-realtime="on" data-ticker_position="header" data-ticker_speed="90" data-round="0" data-logos="0"></div>
-                <script src="https://kit.fontawesome.com/15f4b1a016.js" crossorigin="anonymous"></script>
+                <ul class="currency-status">
+                    <li>
+                        <a href="#">
+                            <i class="tf-ion-arrow-down-b down-status"></i>
+                            <span>BTC/USD</span>
+                            <span>15046.07</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="tf-arrow-dropup up-status"></i>
+                            <span>ETH/USD</span>
+                            <span >843.0005</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="tf-arrow-dropup up-status"></i>
+                            <span>BCH/USD</span>
+                            <span>2648.1377</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="tf-arrow-dropup up-status"></i>
+                            <span>BTG/USD</span>
+                            <span>278.0000</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="tf-arrow-dropup down-status"></i>
+                            <span>DASH/USD</span>
+                            <span>1131.8100</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="tf-arrow-dropup down-status"></i>
+                            <span>XRP/USD</span>
+                            <span>2.1956</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="tf-arrow-dropup up-status"></i>
+                            <span>ZEC/USD</span>
+                            <span>2.1956</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
-<section class="header navigation">
+<section class="header  navigation">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -104,10 +150,7 @@ Fixed Navigation
                                 <a class="nav-link" href="orders.html">Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="notifications.html">Watchlist</a>
+                                <a class="nav-link" href="notifications.html">Notifications</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login.html">Sign In</a>
@@ -116,13 +159,11 @@ Fixed Navigation
                                 <a class="nav-link" href="signup.html">Sign Up</a>
                             </li>
 
-                            <li class="nav-item">
-                              <a class="far fa-user" href="userprofile.html"></a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="team.html">User Details</a>
-                                    <a class="dropdown-item" href="404.html">404 Page</a>
-                                    <a class="dropdown-item" href="blog.html">Blog Page</a>
-                                </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pages
+                                </a>
+                                
                             </li>
                         </ul>
                     </div>
@@ -132,3 +173,178 @@ Fixed Navigation
         </div>
     </div>
 </section>
+
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-left">
+                    <h2>Portfolio</h2>
+                    <span class="border"></span>
+                    
+                </div>
+            </div>
+        </div>
+        <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+div.relative {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  border: 3px solid black;
+  background-color: white;
+  border-radius:5px;
+  top:20px;
+  font-size:25px;
+  overflow-y: scroll;
+} 
+
+body{
+    
+    background-color:#2c6872 ;
+}
+
+
+div.absolute {
+  position: absolute;
+  top: 400px;
+  right: 300px;
+  width: 300px;
+  height: 190px;
+  border: 3px solid black;
+  background-color: ;
+  border-radius: 5px;
+  font-size:25px;
+  overflow-y: scroll;
+}
+div.relativeone {
+  position: relative;
+  width: 600px;
+  height: 270px;
+  border: 3px solid black;
+  background-color:rgb(36, 62, 67);
+  border-radius:5px;
+  top:40px;
+  font-size:25px;
+  overflow-y: scroll
+  
+} 
+</style>
+</head>
+<body>
+<div class="topnav">
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+
+<div class="relative"><b>$86,765.56<b><p><em>+2.6%<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+
+    Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+    
+    Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</em></div>
+  <div class="absolute">Trade History</div>
+  <div class="relativeone"><b>All Assets<b></div>
+
+
+</body>
+</html>
+
+
+
+            </article>
+            
+                
+                                
+                              
+                     
+</section> <!-- end section -->
+                
+
+            
+                
+                                
+                              
+                     
+</section> <!-- end section -->
+    
+        
+                        
+                      
+             
+</section> <!-- end section -->
+        
+<footer id="footer" class="bg-one">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3> About</h3>
+            <ul>
+              <li><a class="nav-link" href="team.html">About</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Contact</h3>
+            <ul>
+               <li><a class="nav-link" href="contact.html">Contact</a></li> 
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>Email</h3>
+            <ul>
+                <li><a class="nav-link" href="email.html">Email</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>FAQ</h3>
+            <ul>
+                <li><a class="nav-link" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+        </div>
+      </div> <!-- end container -->
+    </div>
+    <div class="footer-bottom">
+      <h5>Copyright 2021. CryptoVerse.</h5>
+      <h6>Design and Developed by Devworks</h6>
+    </div>
+  </footer> <!-- end footer -->
+  
+
+
+    <!-- end Footer Area
+    ========================================== -->
+
+    
+    <!-- 
+    Essential Scripts
+    =====================================-->
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+
+  </body>
+  </html>

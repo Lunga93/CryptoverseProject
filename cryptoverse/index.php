@@ -124,7 +124,7 @@ Fixed Navigation
 
 
               <li class="nav-item">
-                <a class="far fa-user" href="userprofile.html"><?php if (isset($_SESSION['username'])) {
+                <a class="far fa-user" href="userprofile.php"><?php if (isset($_SESSION['username'])) {
                                                                   echo "   " . $username;
                                                                 } else {
                                                                   echo 'guest';
