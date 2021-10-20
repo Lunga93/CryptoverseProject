@@ -4,7 +4,7 @@
 
         //API KEYS:  C938843F-78B2-4848-973A-77385C2A2E99 ; 71E2C732-2B51-47BA-87EC-4FE08B2A4796
          //connect to database
-        require_once("../config.php");
+        require_once("config.php");
         //array of coins
         $coins_USD = array('http://rest.coinapi.io/v1/exchangerate/BTC/USD',
                            'http://rest.coinapi.io/v1/exchangerate/ETH/USD',
@@ -18,7 +18,7 @@
                            'http://rest.coinapi.io/v1/exchangerate/DOGE/USD');
 
         // make connection to DB
-        $conn = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DATABASE)
+        $conn = mysqli_connect($SERVERNAME, $USERNAME, $PASSWORD, $DATABASE)
         or die("<p style=\"color: red;\">Could not connect to database!</p>");
 
         
@@ -35,6 +35,7 @@
             // // echo $response -> rate ;
             // echo "\n\n";
             // print_r($response['rate']) ;
+        }
 
 
 ?>

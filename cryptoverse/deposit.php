@@ -144,14 +144,18 @@ Add Card Details
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-left">
-				<form action ="xxxxx.php" method= "POST">
+				<form method= "POST">
           <fieldset>
                         <h2> Add Your Card Details</h2> 
                         <label for="firstName"> First Name:</label><br>
                         <input type="text" name="firstName" id="firstName" size="35" required><br>
 
+
                         <label for="lastName"> Last Name:</label><br>
                         <input type="text" name="lastName" id="lastName" size="35" required><br>
+
+                        <label for="ammount"> Ammount:</label><br>
+                        <input type="text" name="ammount" id="ammount" size="35" required><br>
 
                         <label for="cardNumber"> Card Number:</label><br>
                         <input type="number" name="cardNumber" id="cardNumber" size="25" maxlength="16" required><br><br>
