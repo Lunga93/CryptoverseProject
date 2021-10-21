@@ -9,6 +9,7 @@ $user_data = check_login($con);
 if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
   $balance = $_SESSION['balance'];
+  $query = "SELECT * FROM devworks.user WHERE User_ID = $username"
 }
 
 
@@ -111,10 +112,10 @@ Fixed Navigation
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Wallet.html">Wallet </a>
+                <a class="nav-link" href="Wallet.php">Wallet </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="orders.html">Orders</a>
@@ -170,7 +171,7 @@ Wallet
         </p>
       </div>
       <div class="col-md-12 text-center">
-        <p><a href="deposit.html" class="btn btn-outline-light">Deposit</a>
+        <p><a href="deposit.php" class="btn btn-outline-light">Deposit</a>
           <a href="withdraw.html" class="btn btn-outline-light">Withdraw</a>
         </p>
       </div>
