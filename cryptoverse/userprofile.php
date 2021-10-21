@@ -65,7 +65,7 @@ if (isset($_REQUEST['username'])) {
                 <h2>Last Name</h2>
                 <input type="text" class="input" name="lastname" value="<?php echo $_SESSION['lastname']; ?>">
                 <h2>Email Address</h2>
-                <input type="email" class="input" value="<?php echo $_SESSION['email']; ?>">
+                <input type="email" class="input" name="email" value="<?php echo $_SESSION['email']; ?>">
                 <p></p>
                 <button class="btn">Update</button>
 
