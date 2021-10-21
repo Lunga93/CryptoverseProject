@@ -11,10 +11,10 @@ if (isset($_SESSION['username'])) {
   $query = "SELECT * FROM devworks.wallet WHERE User_ID = '$username'";
 
   $result = mysqli_query($con, $query)
-            or die("couldnt make update");
+    or die("couldnt make update");
 
- $user_data = mysqli_fetch_assoc($result);
- $balance = $user_data['Balance'];
+  $user_data = mysqli_fetch_assoc($result);
+  $balance = $user_data['Balance'];
 }
 
 
@@ -99,9 +99,7 @@ Fixed Navigation
     <div class="row">
       <div class="col-md-12">
         <script src="https://www.cryptohopper.com/widgets/js/script"></script>
-        <div class="cryptohopper-web-widget" data-id="2" data-text_color="#ffffff" data-background_color="#000000"
-          data-numcoins="10" data-realtime="on" data-ticker_position="header" data-ticker_speed="90" data-round="0"
-          data-logos="0"></div>
+        <div class="cryptohopper-web-widget" data-id="2" data-text_color="#ffffff" data-background_color="#000000" data-numcoins="10" data-realtime="on" data-ticker_position="header" data-ticker_speed="90" data-round="0" data-logos="0"></div>
       </div>
     </div>
   </div>
@@ -122,21 +120,15 @@ Fixed Navigation
               <li class="nav-item">
                 <a class="nav-link" href="Wallet.php">Wallet </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="orders.html">Orders</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
 
 
               <li class="nav-item">
                 <a class="far fa-user" href="userprofile.php">
                   <?php if (isset($_SESSION['username'])) {
-                                                                        echo "   " . $username;
-                                                                      } else {
-                                                                        echo 'guest';
-                                                                      } ?>
+                    echo "   " . $username;
+                  } else {
+                    echo 'guest';
+                  } ?>
                 </a>
               </li>
             </ul>
@@ -170,9 +162,9 @@ Wallet
         <h3>Total Balance</h3>
         </p>
         <p class="amount">$
-          <?php 
-                                echo " " . $balance;
-                              ?>
+          <?php
+          echo " " . $balance;
+          ?>
         </p>
       </div>
       <div class="col-md-12 text-center">

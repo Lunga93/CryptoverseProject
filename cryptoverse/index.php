@@ -115,12 +115,6 @@ if (isset($_SESSION['username'])) {
               <li class="nav-item">
                 <a class="nav-link" href="Wallet.php">Wallet </a>
 
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="notifications.html">Watchlist</a>
-              </li>
 
 
               <li class="nav-item">
@@ -310,7 +304,7 @@ Start About Section
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-3 col-lg-3">
-          
+
           <ul>
             <li><a class="nav-link" href="team.html">About</a></li>
           </ul>
@@ -318,18 +312,18 @@ Start About Section
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          
+
           <ul>
             <li><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
 
-        
+
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          
+
           <ul>
             <li><a class="nav-link" href="faq.html">FAQ</a></li>
           </ul>
