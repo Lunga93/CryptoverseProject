@@ -1625,7 +1625,7 @@ a:hover {
 .top-footer {
   background-color: #c1d6d9;
   border-top: 1px solid #c1d6d9;
-  padding: 100px 0 80px;
+  padding: 110px 0 80px;
 }
 
 .top-footer h3 {
@@ -1636,6 +1636,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
+  padding-inline-end: 50%;
 }
 
 .top-footer p {
@@ -1666,7 +1667,7 @@ a:hover {
   text-align: center;
   background-color: #c1d6d9;
   border-top: 1px solid #2c6872;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .footer-bottom h5 {
@@ -1700,6 +1701,7 @@ a:hover {
 
 .subscribe-form .form-control {
   border-radius: 0;
+  margin: auto;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

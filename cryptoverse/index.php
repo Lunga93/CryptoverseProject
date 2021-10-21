@@ -310,7 +310,7 @@ Start About Section
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3> About</h3>
+          
           <ul>
             <li><a class="nav-link" href="team.html">About</a></li>
           </ul>
@@ -318,23 +318,18 @@ Start About Section
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Contact</h3>
+          
           <ul>
             <li><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
         <!-- End of .col-sm-3 -->
 
-        <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>Email</h3>
-          <ul>
-            <li><a class="nav-link" href="email.html">Email</a></li>
-          </ul>
-        </div>
+        
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
-          <h3>FAQ</h3>
+          
           <ul>
             <li><a class="nav-link" href="faq.html">FAQ</a></li>
           </ul>
