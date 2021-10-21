@@ -53,7 +53,7 @@
                 $queryI="INSERT INTO devworks.cryptocurrency(, Balance)
                             value ('$uName', 1000";
                 
-                $result = mysqli_query($conn, $queryU)
+                $result = mysqli_query($con, $queryU)
                                 or die("<p style=\"color: red;\">Could not execute query!</p>");
             }
 
