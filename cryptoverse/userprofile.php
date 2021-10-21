@@ -6,11 +6,20 @@ include("connection.php");
 include("functions.php");
 
 $user_data = check_login($con);
-if (isset($_SESSION['username'])) {
-    $username = $_SESSION['username'];
-    $firstname = $_SESSION['firstname'];
-    $lastname = $_SESSION['lastname'];
-    $email = $_SESSION['email'];
+if (isset($_REQUEST['username'])) {
+    $username = $_REQUEST['username'];
+    $firstname = $_REQUEST['firstname'];
+    $lastname = $_REQUEST['lastname'];
+    $email = $_REQUEST['email'];
+
+    $query = "UPDATE devworks.user
+    SET F_Name = $firstname, L_Name = $lastname, Email = $email;
+    WHERE User_ID = '$username'";
+
+    mysqli_query($con, $query)
+        or die("couldn't make update");
+
+    header("Location: login.php");
 }
 
 
@@ -51,14 +60,12 @@ if (isset($_SESSION['username'])) {
         <div class="rightbox">
             <div class="profile tabshow ">
                 <h1>Personal Information</h1>
-                <h2>Full Name</h2>
-                <input type="text" class="input" value="<?php echo $firstname . " " . $lastname; ?>">
-                <h2>User Name</h2>
-                <input type="text" class="input" value="<?php echo $username; ?>">
+                <h2>First Name</h2>
+                <input type="text" class="input" name="firstname" value="<?php echo $_SESSION['firstname']; ?>">
+                <h2>Last Name</h2>
+                <input type="text" class="input" name="lastname" value="<?php echo $_SESSION['lastname']; ?>">
                 <h2>Email Address</h2>
                 <input type="email" class="input" value="<?php echo $email; ?>">
-                <h2>Password</h2>
-                <input type="password" class="input" value="*******">
                 <p></p>
                 <button class="btn">Update</button>
 
