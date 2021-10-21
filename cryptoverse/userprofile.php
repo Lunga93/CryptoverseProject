@@ -7,10 +7,10 @@ include("functions.php");
 
 $user_data = check_login($con);
 if (isset($_SESSION['username'])) {
-  $username = $_SESSION['username'];
-  $firstname = $_SESSION['firstname'];
-  $lastname = $_SESSION['lastname'];
-  $email = $_SESSION['email'];
+    $username = $_SESSION['username'];
+    $firstname = $_SESSION['firstname'];
+    $lastname = $_SESSION['lastname'];
+    $email = $_SESSION['email'];
 }
 
 
@@ -32,20 +32,19 @@ if (isset($_SESSION['username'])) {
         <div class="leftbox">
             <nav>
                 <a onclick="tabs(0)" class="tab active" href="userprofile.php">
-                    <i class="fas fa-user" ></i>
+                    <i class="fas fa-user" id="profile"></i>
                 </a>
                 <a onclick="tabs(0)" class="tab active" href="payment.html">
-                    <i class="fas fa-wallet"  id="payment"></i>
+                    <i class="fas fa-wallet" id="payment"></i>
                 </a>
-                <a onclick="tabs(0)" class="tab active" href="subscription.html">
-                    <i class="fas fa-question-circle" ></i>
+                <a onclick="tabs(0)" class="tab active" href="contact.html">
+                    <i class="fas fa-question-circle" id="help"></i>
                 </a>
                 <a onclick="tabs(0)" class="tab active" href="settings.html">
-                    <i class="fas fa-cog"  ></i>
+                    <i class="fas fa-cog" id="privacy"></i>
                 </a>
                 <a onclick="tabs(0)" class="tab active" href="logout.php">
-                    <i class="fas fa-sign-out-alt" href="logout.php"></i>
-
+                    <i class="fas fa-sign-out-alt"></i>
                 </a>
             </nav>
         </div>
@@ -109,7 +108,7 @@ if (isset($_SESSION['username'])) {
 
         </div>
     </div>
-    
+
 </body>
 
 </html>

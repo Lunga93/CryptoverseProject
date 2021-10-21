@@ -8,6 +8,7 @@ include("functions.php");
 $user_data = check_login($con);
 if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
+  $balance = $_SESSION['balance'];
 }
 
 
@@ -124,7 +125,7 @@ Fixed Navigation
 
 
               <li class="nav-item">
-                <a class="far fa-user" href="userprofile.html">
+                <a class="far fa-user" href="userprofile.php">
                   <?php if (isset($_SESSION['username'])) {
                                                                         echo "   " . $username;
                                                                       } else {
@@ -163,11 +164,9 @@ Wallet
         <h3>Total Balance</h3>
         </p>
         <p class="amount">$
-          <?php if (isset($_SESSION['balance'])) {
-                                echo " " . $_SESSION['balance'];
-                              } else {
-                                echo '0';
-                              } ?>
+          <?php 
+                                echo " " . $balance;
+                              ?>
         </p>
       </div>
       <div class="col-md-12 text-center">
@@ -200,16 +199,12 @@ Wallet
         </div>
         <!-- End of .col-sm-3 -->
 
-<<<<<<< HEAD
-        
-=======
         <div class="col-sm-3 col-md-3 col-lg-3">
           <h3>Email</h3>
           <ul>
             <li><a class="nav-link" href="email.html">Email</a></li>
           </ul>
         </div>
->>>>>>> 6b3c7802b459b0a4f7d2a567b5f9579b253f217a
         <!-- End of .col-sm-3 -->
 
         <div class="col-sm-3 col-md-3 col-lg-3">
