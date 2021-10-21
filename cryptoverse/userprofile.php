@@ -11,6 +11,7 @@ if (isset($_REQUEST['username'])) {
     $firstname = $_REQUEST['firstname'];
     $lastname = $_REQUEST['lastname'];
     $email = $_REQUEST['email'];
+    $currentmail = $_SESSION['email'];
 
     $query = "UPDATE devworks.user
     SET F_Name = $firstname, L_Name = $lastname, Email = $email;
@@ -65,7 +66,7 @@ if (isset($_REQUEST['username'])) {
                 <h2>Last Name</h2>
                 <input type="text" class="input" name="lastname" value="<?php echo $_SESSION['lastname']; ?>">
                 <h2>Email Address</h2>
-                <input type="email" class="input" name="email" value="<?php echo $_SESSION['email']; ?>">
+                <input type="email" class="input" name="email" value="<?php echo $currentmail; ?>">
                 <p></p>
                 <button class="btn">Update</button>
 
