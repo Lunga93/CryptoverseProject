@@ -7,7 +7,13 @@ include("functions.php");
 //check if the user clicked on the signin
 if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
-  $balance = $_SESSION['balance'];
+  $query = "SELECT * FROM devworks.wallet WHERE User_ID = '$username'";
+
+  $result = mysqli_query($con, $query)
+            or die("couldnt make update");
+
+  $user_data = mysqli_fetch_assoc($result);
+  $balance = $user_data['Balance'];
 }
 if($_SERVER['REQUEST_METHOD'] == "POST")
 {

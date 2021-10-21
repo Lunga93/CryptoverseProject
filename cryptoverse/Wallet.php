@@ -8,7 +8,6 @@ include("functions.php");
 $user_data = check_login($con);
 if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
-  $balance = $_SESSION['balance'];
   $query = "SELECT * FROM devworks.wallet WHERE User_ID = '$username'";
 
   $result = mysqli_query($con, $query)
@@ -178,7 +177,7 @@ Wallet
       </div>
       <div class="col-md-12 text-center">
         <p><a href="deposit.php" class="btn btn-outline-light">Deposit</a>
-          <a href="withdraw.html" class="btn btn-outline-light">Withdraw</a>
+          <a href="withdraw.php" class="btn btn-outline-light">Withdraw</a>
         </p>
       </div>
 
