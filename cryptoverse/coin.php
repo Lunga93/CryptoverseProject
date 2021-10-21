@@ -1,10 +1,11 @@
 <html>
     <body>
     <?php
-
+        include("connection.php");
+        include("functions.php");
         //API KEYS:  C938843F-78B2-4848-973A-77385C2A2E99 ; 71E2C732-2B51-47BA-87EC-4FE08B2A4796
          //connect to database
-        require_once("../config.php");
+        require_once("connection.php");
         //array of coins
         $coins_USD = array('http://rest.coinapi.io/v1/exchangerate/BTC/USD',
                            'http://rest.coinapi.io/v1/exchangerate/ETH/USD',
@@ -17,13 +18,10 @@
                            'http://rest.coinapi.io/v1/exchangerate/USDC/USD',
                            'http://rest.coinapi.io/v1/exchangerate/DOGE/USD');
 
-        // make connection to DB
-        $conn = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DATABASE)
-        or die("<p style=\"color: red;\">Could not connect to database!</p>");
-
+        
         while($array = next($coins_USD)){
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-CoinAPI-Key: C938843F-78B2-4848-973A-77385C2A2E99'));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('X-CoinAPI-Key: C938843F-78B2-4848-973A-77385C2A2E99')); //coinranking44aadfaf60cf06f7229dbc0a49c80bedf977536b3292b40c
             curl_setopt_array($ch, array(
                 CURLOPT_RETURNTRANSFER => 1,
                 CURLOPT_URL => $array
@@ -35,27 +33,27 @@
             // echo "\n\n";
             // print_r($response['rate']) ;
             $price = round($response['rate'], 6);
-            $sym = $response['asset_id_base'];
+            $id = $response['asset_id_base'];
 
-            $query1 = "SELECT symbol
-                        FROM cryptocurrencies
+            $query1 = "SELECT Cryptocurrency_ID
+                        FROM cryptocurrency
                         WHERE EXISTS
-                        (SELECT symbol FROM cryptocurrencies WHERE symbol = '$sym');";
-            $query1R = mysqli_query($conn, $query1R)
+                        (SELECT Cryptocurrency_ID FROM cryptocurrency WHERE Cryptocurrency_ID = '$id');";
+            $query1R = mysqli_query($con, $query1R)
                         or die("<p style=\"color: red;\">Could not execute query!</p>");
             
             if(isset($query1R)){
-                $queryU="UPDATE cryptocurrencies 
-                        SET price = '$price' 
-                        WHERE symbol= '$sym' ";
+                $queryU="UPDATE cryptocurrency
+                        SET Cryptocurrency_Value = '$price' 
+                        WHERE Cryptocurrency_ID= '$id' ";
                 
-                $result = mysqli_query($conn, $queryU)
+                $result = mysqli_query($con, $queryU)
                                 or die("<p style=\"color: red;\">Could not execute query!</p>");
             }else{
-                $queryI="INSERT (...)
-                        VALUE ....";
+                $queryI="INSERT INTO devworks.cryptocurrency(, Balance)
+                            value ('$uName', 1000";
                 
-                $result = mysqli_query($conn, $queryU)
+                $result = mysqli_query($con, $queryU)
                                 or die("<p style=\"color: red;\">Could not execute query!</p>");
             }
 

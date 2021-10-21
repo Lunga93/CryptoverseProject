@@ -1,3 +1,37 @@
+<?php
+
+session_start();
+
+include("connection.php");
+include("functions.php");
+//check if the user clicked on the signin
+if (isset($_SESSION['username'])) {
+  $username = $_SESSION['username'];
+  $query = "SELECT * FROM devworks.wallet WHERE User_ID = '$username'";
+
+  $result1 = mysqli_query($con, $query)
+            or die("couldnt make update");
+
+ $user_data1 = mysqli_fetch_assoc($result1);
+ $balance = $user_data1['Balance'];
+}
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+$user_data = check_login($con);
+
+    $amount = $_REQUEST['amount'];
+    $balance = $balance - $amount;
+
+    $query = "UPDATE devworks.wallet
+    SET Balance = $balance
+    WHERE User_ID = '$username';";
+
+    mysqli_query($con, $query)
+    or die("couldnt make update");
+
+    header("Location: wallet.php");
+}
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -95,26 +129,20 @@ Fixed Navigation
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Wallet.html">Wallet </a>
+                                <a class="nav-link" href="Wallet.php">Wallet </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="orders.html">Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                <a class="nav-link" href="portfolio.php">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="notifications.html">Watchlist</a>
                             </li>
+                            
                             <li class="nav-item">
-                                <a class="nav-link" href="login.html">Sign In</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="signup.html">Sign Up</a>
-                            </li>
-
-                            <li class="nav-item">
-                              <a class="far fa-user" href="userprofile.html"></a>
+                              <a class="far fa-user" href="userprofile.php"></a>
                                 
                             </li>
                         </ul>
@@ -134,7 +162,7 @@ Withdraw
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-left">
-				<form action ="xxxxx.php" method= "POST">
+				<form method= "POST">
           <fieldset>
                         <h2> Withdrawal</h2> 
                         

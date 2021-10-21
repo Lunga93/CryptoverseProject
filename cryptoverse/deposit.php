@@ -4,13 +4,33 @@ session_start();
 
 include("connection.php");
 include("functions.php");
-
-$user_data = check_login($con);
+//check if the user clicked on the signin
 if (isset($_SESSION['username'])) {
   $username = $_SESSION['username'];
+  $query = "SELECT * FROM devworks.wallet WHERE User_ID = '$username'";
+
+  $result = mysqli_query($con, $query)
+            or die("couldnt make update");
+
+  $user_data = mysqli_fetch_assoc($result);
+  $balance = $user_data['Balance'];
 }
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+$user_data = check_login($con);
 
+    $amount = $_REQUEST['ammount'];
+    $balance = $balance + $amount;
 
+    $query = "UPDATE devworks.wallet
+    SET Balance = $balance
+    WHERE User_ID = '$username';";
+
+    mysqli_query($con, $query)
+    or die("couldnt make update");
+
+    header("Location: wallet.php");
+}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -108,10 +128,10 @@ Fixed Navigation
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Wallet.html">Wallet </a>
+                                <a class="nav-link" href="Wallet.php">Wallet </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="orders.html">Orders</a>
@@ -119,15 +139,14 @@ Fixed Navigation
                             <li class="nav-item">
                                 <a class="nav-link" href="portfolio.html">Portfolio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.html">Sign In</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="signup.html">Sign Up</a>
-                            </li>
+                            
 
                             <li class="nav-item">
-                              <a class="far fa-user" href="userprofile.html"></a>
+                              <a class="far fa-user" href="userprofile.php"><?php if (isset($_SESSION['username'])) {
+                                echo "   " . $username;
+                              } else {
+                                echo 'guest';
+                              } ?></a>
                                 
                                 </div>
                             </li>
@@ -156,8 +175,8 @@ Add Card Details
                         <label for="lastName"> Last Name:</label><br>
                         <input type="text" name="lastName" id="lastName" size="35" required><br>
 
-                        <label for="ammount"> Ammount:</label><br>
-                        <input type="text" name="ammount" id="ammount" size="35" required><br>
+                        <label for="ammount">Enter amount:</label><br>
+                        <input type="text" name="ammount" id="ammount" size="25" required><br>
 
                         <label for="cardNumber"> Card Number:</label><br>
                         <input type="number" name="cardNumber" id="cardNumber" size="25" maxlength="16" required><br><br>
@@ -182,8 +201,6 @@ Add Card Details
                         <option VALUE= "Standard Bank"> Standard Bank</option>
                         </select><br><br>
                        
-                        <label for="postCode"> Enter amount:</label><br>
-                        <input type="text" name="postalCode" id="postalCode" size="25" maxlength="4" required><br><br>
                         <input type="submit" name="submit" value="Add">
 
                     </fieldset> 
