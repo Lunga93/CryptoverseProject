@@ -219,6 +219,7 @@ Start About Section
         <div class="testimonial-slider">
           <class class="item">
             <div class="block">
+              <h1>News</h1>
               <div class="cryptohopper-web-widget" data-id="5" data-atid="5"></div>
             </div>
           </class>
